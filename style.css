@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    width: 100%;
+    background-color: black;
+    padding: 0;
+}
+
+/* HEADER CSS */
+.header{
+    width: 100%;
+    margin: auto;
+    padding-top: 0;
+}
+.logo{
+    width: 20rem;
+}
+.logotext {
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(124deg, #1680e8 0%, #2bc9d3 133.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navlinks{
+    width: 50rem;
+}
+.head-navlink {
+    font-family: "Montserrat";
+    color: white;
+    cursor: pointer;
+}
+.head-navlink:hover{
+    color: #70bdee;
+}
+.head-navlink :active {
+    color: #70ee85;
+}
+.login{
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.dropdown{
+    display:none;
+}
+@media screen and (max-width:1100px){
+    .navlinks{
+        display: none;
+    }
+    .dropdown{
+        display:block;
+    }
+}
+
+.btn1{
+    width: 50%;
+    font-size: 1rem;
+    font-family: "Montserrat";
+    color: #d9e9f1;
+    border-radius: 1.5625rem;
+    border: 2px solid rgba(176, 174, 174, 0.6);
+    box-shadow: 0px 0px 10px 2px rgba(112, 110, 110, 0.6);
+}
+.btn2{
+    width: 50%;
+    font-size: 1rem;
+    font-family: "Montserrat";
+    border-radius: 1.5625rem;
+    background: #00DEFC;
+    color: #01071a;
+    border-radius: 1.5625rem;
+    border: 2px solid rgba(176, 174, 174, 0.6);
+    box-shadow: 0px 0px 10px 2px rgba(98, 231, 238, 0.6);
+}
+.links{
+    background-color: transparent !important;
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+}
+.offcanvas-header{
+    backdrop-filter: blur(30px);
+}
+.toggle-links{
+    box-shadow: inset rgba(126, 71, 241, 0.4);
+    text-align: center;
+    width: 100%;
+    height: 15%;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+.toggle-links:hover{
+    box-shadow: inset rgba(126, 71, 241, 1);
+    background-color:#3d444baf;
+}
+@media  screen and (max-width:900px){
+    .logo{
+        align-self: center;
+    }
+    .links{
+        align-self: flex-end;
+    }
+}
+/* BACKGROUND ELEMENTS STYLING */
+.body-bg-grad {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top:0;
+    left: -100px;
+    border-radius: 100%;
+    background: rgba(126, 71, 241, 0.4);
+    /* background: rgba(228, 216, 255, 0.4); */
+    filter: blur(290px);
+}
+.glow-block{
+    position: absolute;
+    left: 10px;
+    z-index: -10;
+    filter: blur(10px);
+    z-index: -20;
+    }
+
+.svgblur1{
+    position:fixed;
+    left: 30vw;
+    z-index: -10;
+}
+.svgblur2{
+    position:fixed;
+    top: 50vh;
+    right: 20vw;
+    transform: rotate( 60deg);
+    z-index: -10;
+}
+.svgblur3{
+    position:fixed;
+    right: 15vw;
+    transform: rotate( 20deg);
+    z-index: -20;
+    
+}
+.rightboxblur{
+    position: absolute;
+    transform: rotate(-60deg);
+    z-index: -20;
+}
+
+/* Landing Body */
+.landing{
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+}
+@media screen and (max-width:1100px){
+    .landing{
+        height: auto;
+    }
+}
+.maincard{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+}
+.subcard{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.titlecard{
+    font-family: 'Inter', sans-serif;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+@media screen and (max-width:990px){
+    .subcard{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .titlecard{
+        align-self: flex-start;
+    }
+}
+
+.search{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.256);
+
+}
+.search:-ms-keyboard-active{ 
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.256);
+ }
+#searchbar{
+    font-family: 'Montserrat' , sans-serif;
+    background: none;
+    border: none;
+    overflow: visible;
+    cursor: pointer;
+    width: 40%;
+}
+#searchbutton{
+    width: 10%;
+    border:none;
+    background: none;
+}
+
+/* Horizon Card */
+.cardbox{
+    width: 35%;
+    height: 100%;
+}
+.horizon-card{
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nova Square', sans-serif;
+    width: 20rem;
+    height: 100%;
+    border-radius: 2.625rem;
+    border: 1px solid rgba(255, 255, 255, 0.256);
+    background: linear-gradient(180deg, rgba(142, 141, 141, 0.50) -36.57%, rgba(217, 217, 217, 0.00) 141.73%);
+    backdrop-filter: blur(6px);
+}
+
+
+.heading{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading div{
+    color: #acababad;
+}
+
+.horizon-title{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.horizon-title h1{
+    font-size: 3rem;
+    background: linear-gradient(124deg, #1680E8 0%, #2BC9D3 133.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:1000px){
+    .cardbox{
+        align-self: left;
+    }
+}
+
+/* QUOTE PAGE */
+.mission{
+    color: #FFF;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.quote{
+    font-family: 'Montserrat' , sans-serif;
+    margin:auto;
+    width: 95vw;
+    height: auto;
+}
+.quote-text{
+    width: 75%;
+    font-size: 8vw;
+    font-weight: 700;
+    line-height: 110%;
+}
+.arrow{
+    width: 70%;
+
+    position: absolute;
+    right: 0;
+    z-index: -5;
+}
+
+/* YT Embed */
+.yt{
+    margin: auto;
+    padding: 2%;
+    height: 95vh;
+    width: 90vw;
+}
+
+/* About Section */
+.about-section{
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1708FC;
+}
+.who-head{
+    font-family: 'Montserrat',sans-serif;
+    display: flex;
+    align-items:baseline;
+    height: 50%;
+    width: 40%;
+    line-height: 100%;
+    text-align:left;
+    align-self:center;
+    font-weight: 500;
+    font-size:7vw;
+}
+.who-text{
+    font-family: 'Montserrat',sans-serif;
+    width: 50vw;
+    height: auto;
+    color: #F2F2F2;
+    font-size: 2.75vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
