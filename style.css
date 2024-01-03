@@ -1,5 +1,4 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
@@ -155,13 +154,15 @@ body {
 
 /* Landing Body */
 .landing{
-    width: 90vw;
+    width: 95vw;
     height: 90vh;
     margin: auto;
+    padding-top:3% ;
 }
 @media screen and (max-width:1100px){
     .landing{
         height: auto;
+        padding: auto;
     }
 }
 .maincard{
@@ -234,15 +235,13 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Nova Square', sans-serif;
-    width: 20rem;
-    height: 100%;
-    border-radius: 2.625rem;
+    width: 25rem;
+    height: 15rem;
+    border-radius: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.256);
     background: linear-gradient(180deg, rgba(142, 141, 141, 0.50) -36.57%, rgba(217, 217, 217, 0.00) 141.73%);
     backdrop-filter: blur(6px);
 }
-
-
 .heading{
     width:100%;
     display: flex;
@@ -260,8 +259,8 @@ body {
     justify-content: space-between;
 }
 .horizon-title h1{
-    font-size: 3rem;
-    background: linear-gradient(124deg, #1680E8 0%, #2BC9D3 133.32%);
+    font-size: 4rem;
+    background: linear-gradient(124deg, #1680E8 2%, #2BC9D3 133.32%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -289,7 +288,7 @@ body {
     height: auto;
 }
 .quote-text{
-    width: 75%;
+    width: 73%;
     font-size: 8vw;
     font-weight: 700;
     line-height: 110%;
