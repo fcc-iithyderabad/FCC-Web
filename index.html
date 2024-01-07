@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Bootstrap import link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+
     <!-- Font imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,27 +17,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
-    <title>Landing Page</title>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- GSAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Draggable.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/EaselPlugin.min.js" defer></script>
+    <script src="/script.js" defer></script>
+
+    <title>FCC</title>
     
 </head>
-<body >
+<body  >
 
     <!-- HEADER and NAVBAR -->
-    <div class="container-fluid header  ">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 w-100">
-          <div class="col-md-3 mb-2 mb-md-0 w-auto logo" >
+    <div class="container-fluid header d-flex justify-content-center ">
+        <header class="d-flex  align-items-center justify-content-between justify-content-lg-around py-3 ">
+          <div class=" w-auto logo" >
             <a href="/index.html" class="d-inline-flex link-body-emphasis text-decoration-none align-items-center justify-content-evenly">
-              <img  src="/FCC-Web/images/fcc logo high res.png" alt="FCC" width="60" height="60">
+              <img  src="/images/fcc logo high res.png" alt="FCC" width="60" height="60">
               <h1 class="logotext pt-3 ps-2 fw-bold navbar-brand">FCC</h1>
             </a>
           </div>
           
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 w-auto navlinks d-none d-lg-flex">
-            <li><a href="/FCC-Web/index.html" class="nav-link fs-6 head-navlink px-3 fw-light">Horizon</a></li>
-            <li><a href="/FCC-Web/pages/Finspace.html" class="nav-link fs-6 head-navlink px-3 fw-light">FinSpace</a></li>
-            <li><a href="/FCC-Web/pages/Finspace.html" class="nav-link fs-6 head-navlink px-3 fw-light">Sponsors</a></li>
-            <li><a href="/FCC-Web/pages/Finspace.html" class="nav-link fs-6 head-navlink px-3 fw-light">Resources</a></li>
-            <li><a href="/FCC-Web/pages/Finspace.html" class="nav-link fs-6 head-navlink px-3 fw-light">Contact</a></li>
+          <ul class="nav col-12 col-md-auto mb-2  mb-md-0 w-auto navlinks d-none d-lg-flex justify-content-center">
+            <li><a href="/index.html" class="nav-link fs-6 head-navlink px-3 fw-light">Horizon</a></li>
+            <li><a href="/pages/Finspace.html" class="nav-link fs-6 head-navlink px-3 fw-light">FinSpace</a></li>
+            <li><a href="/pages/Finspace.html" class="nav-link fs-6 head-navlink px-3 fw-light">Sponsors</a></li>
+            <li><a href="/pages/Finspace.html" class="nav-link fs-6 head-navlink px-3 fw-light">Resources</a></li>
+            <li><a href="/pages/Finspace.html" class="nav-link fs-6 head-navlink px-3 fw-light">Contact</a></li>
         </ul>
     
         <div class="col-md-3 login d-none d-lg-flex" >
@@ -54,11 +71,11 @@
               <button type="button" class="btn-close bg-light " data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
             </div>
             <div class=" flex flex-col justify-evenly h-100 d-lg-none links">
-                  <a href="/FCC-Web/index.html" class="toggle-links ">Horizon</a>
-                  <a href="/FCC-Web/pages/Finspace.html" class="toggle-links ">FinSpace</a>
-                  <a href="/FCC-Web/pages/Finspace.html" class="toggle-links ">Sponsors</a>
-                  <a href="/FCC-Web/pages/Finspace.html" class="toggle-links ">Resources</a>
-                  <a href="/FCC-Web/pages/Finspace.html" class="toggle-links ">Contact</a>
+                  <a href="/index.html" class="toggle-links ">Horizon</a>
+                  <a href="/pages/Finspace.html" class="toggle-links ">FinSpace</a>
+                  <a href="/pages/Finspace.html" class="toggle-links ">Sponsors</a>
+                  <a href="/pages/Finspace.html" class="toggle-links ">Resources</a>
+                  <a href="/pages/Finspace.html" class="toggle-links ">Contact</a>
                   <div class="col-md-3 login" >
                     <button type="button" class="btn btn1 fs-6 mx-2 fw-bold">Sign In</button>
                     <button type="button" class="btn btn2 fs-6 mx-2 fw-bold">Sign Up</button>
@@ -67,22 +84,22 @@
             </div>
         </header>
       </div>
-    <img class="glow-block" src="/FCC-Web/images/glowblocksmall.png" alt="">
-    <img class="svgblur1" src="/FCC-Web/images/rupeeblur.svg" alt="" height="50" width="50" title="svg">
-    <img class="svgblur2" src="/FCC-Web/images/rupeeblur.svg" alt="" height="70" width="70" title="svg">
-    <img class="svgblur3" src="/FCC-Web/images/rupeeblur.svg" alt="" height="40" width="40" title="svg">
+    <img class="glow-block" src="/images/glowblocksmall.png" alt="">
+    <img class="svgblur1" src="/images/rupeeblur.svg" alt="" height="50" width="50" title="svg">
+    <img class="svgblur2" src="/images/rupeeblur.svg" alt="" height="70" width="70" title="svg">
+    <img class="svgblur3" src="/images/rupeeblur.svg" alt="" height="40" width="40" title="svg">
     <!-- <img class="rightboxblur" src="/images/glowblocksmall.png" alt="" height="400" width="400"> -->
     <div class="body-bg-grad"></div>
     <!-- <img class="rightboxblur" src="/images/Group 1blockright.svg" alt="" width="300" height="300"> -->
     
     <!-- LANDING PAGE BODY 1 -->
     <div class="landing">
-      <div class="container-fluid col-xxl-8  py-5 maincard">
+      <div class="container-fluid col-xxl-8  py-4 maincard w-100">
             <div class="row flex-lg-row g-5 subcard" >
                 <div class="col-lg-6 titlecard py-5">
                     <div class="titles">
-                      <h1 class="display-5 fw-bold text-body-light lh-1 mb-3" style="color:#1270ED;font-size: 3.8rem;">Finance and Consulting Club</h1>
-                      <h1 class="display-5 fw-light text-body-light lh-1 mb-3" style="font-size: 3.5rem;">IIT Hyderabad</h1>
+                      <h1 class="display-5 fw-bold text-body-light lh-1 mb-3 fcc-main-heading">Finance and Consulting Club</h1>
+                      <h1 class="display-5 fw-light text-body-light lh-1 mb-3 iith-main-heading">IIT Hyderabad</h1>
                   </div>
                   <form action="\search" method="get" class="search px-3 py-1 ">
                       <input type="text"  name="searchtext" placeholder="Search for blogs" id="searchbar">
@@ -95,42 +112,51 @@
                   <div class="horizon-card d-flex flex-column align-items-start">
                       <div class="heading ">
                           <div>FCC, IIT Hyderabad</div>
-                          <img class="horizon-logo" src="/FCC-Web/images/Group 3.svg" alt="" width="70" height="70">
+                          <img class="horizon-logo" src="/images/Group 3.svg" alt="" width="70" height="70">
                         </div>
                       <div class="horizon-title">
                           <h1>Horizon</h1>
-                          <img src="/FCC-Web/images/wifi.svg" alt="" width="50" height="50">
+                          <img src="/images/wifi.svg" alt="" width="50" height="50">
                         </div>
                       <div class="timer">
-                          <img src="/FCC-Web/images/timer.png" alt="" width="100%" height="90%">
+                          <img src="/images/timer.png" alt="" width="100%" height="90%">
                       </div>
                   </div>
                 </div>
             </div>
         </div>
   </div>
-
+  <!-- <div class="break w-100 bg-light">p</div> -->
   <!-- QUOTE PAGE -->
-  <div class="quote">
+  <div class="quote quote-span col-lg-6 px-4 py-5">
       <div class="arrow">
-          <img class="arrowsvg" src="/FCC-Web/images/Vector.svg" alt="" height="100%" width="100%">
+          <img class="arrowsvg" src="/images/Vector.svg" alt="" height="90%" width="90%">
       </div>
-    <h3 class="ps-5 mission fs-4">Our mission</h3>
-    <div class="quote-text ps-5 ">
-        TO PROVE THAT ENGINEERS CAN DO <p  style="color: #1507E8">NUMBERS</p>
+    <h3 class=" mission fs-2 quote-span" >Our mission</h3>
+    <div class="quote-text col-lg-6  ">
+        <p class="quote-span q1">TO PROVE</p>
+        <p class="quote-span q2">THAT <br></p>
+        <p class="quote-span q3">ENGINEERS <br></p>
+        <p class="quote-span q4">CAN DO</p>
+        <p class="quote-span q5" style="color: #1507E8">NUMBERS</p>
+    </div>
+    <!-- YOUTUBE VIDEO EMBED -->
+    <div class="yt py-4">
+      <iframe src="https://www.youtube.com/embed/cSs0gZnTUNU?autoplay=1&mute=1;loop=1&amp;rel=0&amp;" frameborder="10" width="100%" height="100%"></iframe>
     </div>
   </div>
   
-  <!-- YOUTUBE VIDEO EMBED -->
-  <div class="yt">
-    <iframe src="https://www.youtube.com/embed/cSs0gZnTUNU?autoplay=0&mute=1" frameborder="10" width="100%" height="100%" ></iframe>
-  </div>
   <!-- WHO ARE WE PAGE -->
-  <div class="about-section">
-    <div class="who-head who">So,<br> Who<br> are we?</div>
-    <div class="who-text who">We are a student-run body with a vision to develop and cultivate Finance and consulting related interests in the institute. We work towards promoting different fields of finance, consulting, and product management amongst the students and provide a means for them to explore the same via sessions, competitions, projects, and any other avenues possible.</div>
-  </div>
+    <div class="about-section">    
+      <div class="who-head who-large who">So,<br> Who<br> are we?</div>
+      <div class="who-head who-small who d-flex align-items-center justify-content-center"><p>So, Who are we?</p></div>
+      <div class="who-text who">We are a student-run body with a vision to develop and cultivate Finance and consulting related interests in the institute. We work towards promoting different fields of finance, consulting, and product management amongst the students and provide a means for them to explore the same via sessions, competitions, projects, and any other avenues possible.</div>
+    </div>
+    
 
+  <!-- <div class="whoarewe">
+    <img src="/FCC-Web/images/Group 19.svg" alt="" width="100%" height="100%">
+  </div> -->
   
 
 
@@ -146,11 +172,7 @@
 
 
 
-  <p style="position: relative; top: 2000px;">hello</p>
+
   </body>
-    <!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </html>
