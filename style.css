@@ -396,7 +396,10 @@
     font-weight: 400;
     line-height: normal;
   }
-  
+  .who-small{
+    display: none;
+  }
+
   @media screen and (max-width:800px){
     .about-section{
       padding-top: 2%;
@@ -412,6 +415,12 @@
       font-size: 5vw;
       text-align: center;
     }
-  
+    .who-large{
+        display: none;
+    }
+    .who-small{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
   }
-  

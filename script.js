@@ -1,12 +1,4 @@
-if(window.innerWidth < 800) {
-    $('.who-large').css("display","none")
-    $('.who-small').css("display","flex")
-}
-else{
-    $('.who-large').css("display","flex")
-    $('.who-small').css("display","none")
 
-}
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.from(".titlecard", { 
