@@ -4,7 +4,7 @@
   font-weight: 400;
   src: local(''),
     url('images/Ikaros.ttf') format('woff'),
-    url('images/Ikaros-Regular.ttf') format('woff3');
+    url('images/Ikaros-Regular.otf') format('woff3');
 }
 @font-face {
   font-family: 'Ikaros Sans';
