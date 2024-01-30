@@ -377,41 +377,63 @@ header {
 }
 /* About Section */
 .about-section {
+  position: relative;
   width: 100%;
   height: auto;
   padding: 1%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#126DEDE5, #1270ED99);
-  /* background: url(<path-to-image>), rgb(18, 95, 133) 50% / cover no-repeat; */
+  flex-direction: column;
+  background: linear-gradient(#135fc8e5, #0f489399);
+  overflow: hidden;
   mix-blend-mode: exclusion;
 }
 .who-head {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: baseline;
   height: 50%;
-  width: 40%;
+  width: 90%;
   line-height: 100%;
   text-align: left;
   align-self: center;
   font-weight: 500;
   font-size: 7vw;
+  padding-top: 2%;
+  padding-left: 2%;
 }
 .who-text {
   font-family: "Montserrat", sans-serif;
-  width: 50%;
+  width: 90%;
   height: auto;
   color: #f2f2f2;
   font-size: max(1.5rem, min(0.776699vw + 1.31796rem, 2.25rem));
   font-size: 2.75vw;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   line-height: normal;
+  padding: 2%;
 }
 .who-small {
   display: none;
+}
+.white-noise {
+  background-color: white;
+  width: 25%;
+  height: 25%;
+  border-radius: 100%;
+  filter: blur(200px);
+}
+.white1 {
+  position: absolute;
+  top: -30px;
+  right: -50px;
+}
+.white2 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -439,3 +461,50 @@ header {
   }
 }
 
+/* What we do section */
+.what-we-do {
+  position: relative;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-grad-what {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  border-radius: 56.94313rem;
+  background: rgba(126, 71, 241, 0.4);
+  filter: blur(200px);
+}
+.what-heading {
+  font-size: 7vw;
+  width: 85%;
+  line-height: 120%;
+  padding-top:3%;
+  padding-bottom:2%;
+}
+
+.what-cards {
+  width: 85%;
+}
+.what-card {
+  width: 21rem;
+  height: 20rem;
+  border-radius: 3.5rem;
+  border: 1.5px solid rgba(174, 181, 250, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.256);
+  background: linear-gradient(
+    180deg,
+    rgba(142, 141, 141, 0.5) -36.57%,
+    rgba(217, 217, 217, 0) 141.73%
+  );
+  backdrop-filter: blur(6px);
+}

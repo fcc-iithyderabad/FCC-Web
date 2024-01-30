@@ -15,8 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -64,22 +67,22 @@
             </svg>
           </button>
           
-          <div class="offcanvas-lg bg-transparent offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel"  data-bs-scroll="true">
+          <div class="offcanvas-lg bg-transparent offcanvas-end w-auto" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel"  data-bs-scroll="true">
             <div class="offcanvas-header d-flex justify-content-end bg-transparent d-lg-none">
               <button type="button" class="btn-close bg-light " data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
             </div>
-            <div class=" flex flex-col justify-evenly h-100 d-lg-none links">
+            <div class=" flex flex-col justify-evenly h-100 d-lg-none links w-auto">
                   <a href="index.html" class="toggle-links ">Horizon</a>
                   <a href="pages/Finspace.html" class="toggle-links ">FinSpace</a>
                   <a href="pages/Finspace.html" class="toggle-links ">Sponsors</a>
                   <a href="pages/Finspace.html" class="toggle-links ">Resources</a>
                   <a href="pages/Finspace.html" class="toggle-links ">Contact</a>
-                  <div class="col-md-3 login" >
+                  <!-- <div class="col-md-3 login" >
                     <button type="button" class="btn btn1 fs-6 mx-2 fw-bold">Sign In</button>
                     <button type="button" class="btn btn2 fs-6 mx-2 fw-bold">Sign Up</button>
-                  </div>
-                </div>
-            </div>
+                  </div> -->
+              </div>
+          </div>
         </header>
       </div>
     <img class="glow-block" src="images/glowblocksmall.png" alt="">
@@ -99,12 +102,16 @@
                       <h1 class="display-5 fw-bold text-body-light lh-1 mb-3 fcc-main-heading">Finance and Consulting Club</h1>
                       <h1 class="display-5 fw-light text-body-light lh-1 mb-3 iith-main-heading">IIT Hyderabad</h1>
                   </div>
-                  <form action="\search" method="get" class="search px-3 py-1 ">
-                      <input type="text"  name="searchtext" placeholder="Search for blogs" id="searchbar">
+
+                  <!-- SEARCH BAR -->
+
+                  <!-- <form action="\search" method="get" class="search px-3 py-1 ">
+                      <input type="text"  name="searchtext" placeholder="Search for blogs" id="searchbar"> -->
                       <!-- <button type="submit" id="searchbutton">
                           <img  src="/images/search icon.svg" alt="" width="60%" height="80%">
                       </button> -->
-                  </form>
+                  <!-- </form> -->
+
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6 cardbox py-4">
                   <div class="horizon-card d-flex flex-column align-items-start">
@@ -124,9 +131,7 @@
                             <div class="minutes fs-3"><span id="minutes"> 00</span><br> <span>min</span></div>
                             <div class="seconds fs-3"><span id="seconds"> 00</span> <br><span>sec</span></div>
                           </div>
-
                       </div>
-
                   </div>
                 </div>
             </div>
@@ -154,11 +159,26 @@
   
   <!-- WHO ARE WE PAGE -->
     <div class="about-section">    
-      <div class="who-head who-large who">So,<br> Who<br> are we?</div>
+      <div class="white1 white-noise"></div>
+      <div class="white2 white-noise"></div>
+      <div class="who-head who-large who">So,<br> Who are we?</div>
       <div class="who-head who-small who"><p>So, Who are we?</p></div>
       <div class="who-text who">We are a student-run body with a vision to develop and cultivate Finance and consulting related interests in the institute. We work towards promoting different fields of finance, consulting, and product management amongst the students and provide a means for them to explore the same via sessions, competitions, projects, and any other avenues possible.</div>
     </div>
     
+
+  <!-- WHAT DO WE DO SECTION -->
+  <div class="what-we-do">
+    <div class="bg-grad-what"></div>
+    <div class="what-heading ">
+      What Do <br> We Do ?
+    </div>
+    <div class="what-cards d-flex justify-content-between h-auto">
+      <div class="what-card" id="card1"></div>
+      <div class="what-card" id="card2"></div>
+      <div class="what-card" id="card3"></div>
+    </div>
+  </div>
 
 
   
