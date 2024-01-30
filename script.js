@@ -28,7 +28,7 @@ gsap.from(".arrow", {
 
 document.addEventListener('DOMContentLoaded', function () {
     // Set the date we're counting down to
-    const countDownDate = new Date("Feb 15, 2024 00:00:00").getTime();
+    const countDownDate = new Date("Feb 16, 2024 00:00:00").getTime();
     console.log(countDownDate);
 
     // Update the countdown every 1 second
