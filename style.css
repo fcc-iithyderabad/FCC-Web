@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'Ikaros Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/images/Ikaros.ttf') format('woff'),
+    url('/images/Ikaros-Regular.ttf') format('woff3');
+}
+@font-face {
+  font-family: 'Ikaros Sans';
+  font-style: normal;
+  font-weight: 200;
+  src: local(''),
+  url('/images/Ikaros-Light.otf') format('woff2');
+}
+
+
 * {
   padding: 0;
   box-sizing: border-box;
@@ -28,7 +45,7 @@ header {
 }
 .logotext {
   font-size: 3rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ikaros Sans', sans-serif;
   background: linear-gradient(124deg, #1680e8 0%, #2bc9d3 133.32%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -185,8 +202,9 @@ header {
   justify-content: space-between;
 }
 .titlecard {
-  font-family: "Inter", sans-serif;
-  width: 65%;
+  font-family: 'Ikaros Sans', sans-serif;
+  font-weight: 200;
+  width: 60%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -195,11 +213,11 @@ header {
 }
 .fcc-main-heading {
   color: #1270ed;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .iith-main-heading {
   font-size: 3.3rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ikaros Sans', sans-serif;
 
 }
 @media screen and (max-width: 400px) {
@@ -239,7 +257,7 @@ header {
   box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.256);
 }
 #searchbar {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Ikaros Sans', sans-serif;
   background: none;
   border: none;
   overflow: visible;
@@ -334,7 +352,7 @@ header {
 
 /* QUOTE PAGE */
 .quote {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Ikaros Sans', sans-serif;
   width: 100%;
   height: auto;
   margin: auto;
@@ -344,7 +362,7 @@ header {
 .mission {
   text-align: left;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Ikaros Sans', sans-serif;
   font-size: 2.1875rem;
   font-style: normal;
   font-weight: 400;
@@ -392,7 +410,7 @@ header {
   mix-blend-mode: exclusion;
 }
 .who-head {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ikaros Sans', sans-serif;
   display: flex;
   align-items: baseline;
   height: 50%;
@@ -406,7 +424,7 @@ header {
   padding-left: 2%;
 }
 .who-text {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Ikaros Sans', sans-serif;
   width: 90%;
   height: auto;
   color: #f2f2f2;
@@ -468,8 +486,7 @@ header {
   position: relative;
   height: auto;
   width: 100%;
-  overflow: hidden;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ikaros Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -493,10 +510,16 @@ header {
   padding-top:3%;
   padding-bottom:2%;
 }
+.what-heading p{
+  width: 40%;
+}
 
 .what-cards {
   width: 85%;
-  height: 20vw;
+  height: 23vw;
+
+  display: flex;
+  justify-content: space-between;
 }
 .what-card {
   display: flex;
@@ -506,7 +529,7 @@ header {
   width: 30%;
   height: 100%;
   border-radius: 2rem;
- 
+  
   border: 1px solid rgba(255, 255, 255, 0.256);
   background: linear-gradient(
     180deg,
@@ -516,11 +539,15 @@ header {
   backdrop-filter: blur(6px);
   padding: auto;
 }
-
-.what-subcard{
-  margin: auto;
+.what-subcard-link{
   width: 90%;
   height: 90%;
+  text-decoration: none;
+}
+.what-subcard{
+  margin: auto;
+  width: 100%;
+  height: 100%;
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.256);
   background-image: url("/images/Group\ 30.svg");
@@ -529,6 +556,10 @@ header {
   background-size: cover; 
   background-size: auto;
   padding: 4%;
+}
+.what-subcard:hover{
+  cursor: pointer;
+  box-shadow: 10px 20px rgba(0 , 0, 0, 0.5);
 }
 
 .what-subcard div{
@@ -541,12 +572,45 @@ header {
   align-items: flex-start;
   justify-content: space-between;
 }
+.subcard-top img{
+  width: auto;
+}
 .subcard-bottom{
   display: flex;
   align-items: end;
   justify-content: flex-start;
 }
 .subcard-bottom p{
+  font-family: 'Ikaros Sans' , sans-serif;
   font-size: 2.75vw;
   line-height: 103%;
+  font-weight: 200;
 }
+@media screen and (max-width: 800px) {
+  .what-we-do{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .what-heading{
+    font-size: 7vw;
+    padding: 2%;
+    text-align: center;
+  }
+  .what-heading p{
+    width: 100%;
+  }
+
+  .what-cards {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .what-card{
+    width: 50%;
+    height: 50rem;
+  }
+}
+
