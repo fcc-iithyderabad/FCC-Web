@@ -484,7 +484,6 @@ header {
 
 /* What we do section */
 .what-we-do {
-  position: relative;
   height: auto;
   width: 100%;
   font-family: 'Ikaros Sans', sans-serif;
@@ -617,6 +616,14 @@ header {
 
 
 /* FOOTER */
-/* footer{
+.footer{
+  margin: auto;
+  font-family: 'Ikaros Sans';
+}
+footer{
   background-color: rgb(35,93,174);
-} */
+  padding: 5%;
+}
+.nav-item a{
+  color: white;
+}
