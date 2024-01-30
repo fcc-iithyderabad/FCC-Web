@@ -28,7 +28,7 @@ header {
 }
 .logotext {
   font-size: 3rem;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: linear-gradient(124deg, #1680e8 0%, #2bc9d3 133.32%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -199,6 +199,8 @@ header {
 }
 .iith-main-heading {
   font-size: 3.3rem;
+  font-family: 'Open Sans', sans-serif;
+
 }
 @media screen and (max-width: 400px) {
   .fcc-main-heading {
@@ -485,26 +487,66 @@ header {
   filter: blur(200px);
 }
 .what-heading {
-  font-size: 7vw;
+  font-size: 6.9vw;
   width: 85%;
-  line-height: 120%;
+  line-height: 100%;
   padding-top:3%;
   padding-bottom:2%;
 }
 
 .what-cards {
   width: 85%;
+  height: 20vw;
 }
 .what-card {
-  width: 21rem;
-  height: 20rem;
-  border-radius: 3.5rem;
-  border: 1.5px solid rgba(174, 181, 250, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30%;
+  height: 100%;
+  border-radius: 2rem;
+ 
   border: 1px solid rgba(255, 255, 255, 0.256);
   background: linear-gradient(
     180deg,
-    rgba(142, 141, 141, 0.5) -36.57%,
+    rgba(47, 73, 221, 0.5) -36.57%,
     rgba(217, 217, 217, 0) 141.73%
   );
   backdrop-filter: blur(6px);
+  padding: auto;
+}
+
+.what-subcard{
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.256);
+  background-image: url("/images/Group\ 30.svg");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-size: auto;
+  padding: 4%;
+}
+
+.what-subcard div{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.5vw;
+}
+.subcard-top{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.subcard-bottom{
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+}
+.subcard-bottom p{
+  font-size: 2.75vw;
+  line-height: 103%;
 }
