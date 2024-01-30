@@ -118,7 +118,8 @@ header {
   width: 100%;
   height: 15%;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  padding: 2%;
 }
 .toggle-links:hover {
   box-shadow: inset rgba(126, 71, 241, 1);
@@ -213,10 +214,10 @@ header {
 }
 .fcc-main-heading {
   color: #1270ed;
-  font-size: 5rem;
+  font-size: 5.5rem;
 }
 .iith-main-heading {
-  font-size: 3.3rem;
+  font-size: 2.5rem;
   font-family: 'Ikaros Sans', sans-serif;
 
 }
