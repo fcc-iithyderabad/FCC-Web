@@ -550,7 +550,7 @@ header {
   height: 100%;
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.256);
-  background-image: url("/images/Group\ 30.svg");
+  background-image: url("images/Group\ 30.svg");
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover; 
