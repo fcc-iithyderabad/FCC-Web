@@ -619,11 +619,30 @@ header {
 .footer{
   margin: auto;
   font-family: 'Ikaros Sans';
+  position: relative;
+  overflow: hidden;
 }
 footer{
-  background-color: rgb(35,93,174);
+  background-color: rgb(15,70,144);
   padding: 5%;
 }
 .nav-item a{
   color: white;
+}
+.white-noise1 {
+  background-color: white;
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  filter: blur(200px);
+}
+.white1-1 {
+  position: absolute;
+  bottom: 30px;
+  right: -20px;
+}
+.white2-1 {
+  position: absolute;
+  top: 0px;
+  left: -200px;
 }
