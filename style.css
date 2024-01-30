@@ -3,15 +3,15 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-    url('/images/Ikaros.ttf') format('woff'),
-    url('/images/Ikaros-Regular.ttf') format('woff3');
+    url('images/Ikaros.ttf') format('woff'),
+    url('images/Ikaros-Regular.ttf') format('woff3');
 }
 @font-face {
   font-family: 'Ikaros Sans';
   font-style: normal;
   font-weight: 200;
   src: local(''),
-  url('/images/Ikaros-Light.otf') format('woff2');
+  url('images/Ikaros-Light.otf') format('woff2');
 }
 
 
