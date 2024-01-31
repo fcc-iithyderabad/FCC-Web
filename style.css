@@ -517,11 +517,12 @@ header {
 }
 
 .what-cards {
-  width: 85%;
-  height: 23vw;
+  width: 90%;
+  height: auto;
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .what-card {
   display: flex;
@@ -529,7 +530,7 @@ header {
   justify-content: center;
 
   width: 30%;
-  height: 100%;
+  height: auto;
   border-radius: 2rem;
   
   border: 1px solid rgba(255, 255, 255, 0.256);
