@@ -24,7 +24,7 @@
     font-weight: 400;
 }
 .hor-heading-hor{
-    font-size: 7.5rem;
+    font-size: 7.5vw;
     font-weight: 400;
 }
 .hor-button button{
@@ -37,6 +37,10 @@
 .about-section{
     margin: auto;
     width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .about-section-sub{
     margin: auto;
@@ -47,6 +51,7 @@
     height: 20rem;
     overflow: hidden;
 }
+
 .about-outcard{
     width: 27%;
     border-radius: 2rem;
@@ -62,6 +67,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .about-card{
     margin: auto;
     width: 92%;

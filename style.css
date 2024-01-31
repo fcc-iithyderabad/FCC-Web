@@ -408,7 +408,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(#135fc8e5, #0f489399);
+  background: linear-gradient(#0f4693e5, #0f489399);
   overflow: hidden;
   mix-blend-mode: exclusion;
 }
