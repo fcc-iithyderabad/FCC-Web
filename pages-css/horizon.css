@@ -50,18 +50,17 @@
     width: 90%;
     height: 20rem;
     overflow: hidden;
+    flex-wrap: wrap;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .about-outcard{
-    width: 27%;
+    width: 30%;
+    height: auto;
     border-radius: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.256);
-    background: linear-gradient(
-        180deg,
-        rgba(47, 73, 221, 0.5) -36.57%,
-        rgba(217, 217, 217, 0) 141.73%
-      );
-    backdrop-filter: blur(6px);
 
     display:flex;
     justify-content: center;
@@ -74,12 +73,6 @@
     height: 92%;
     border-radius: 2rem;
 
-
-    background-image: url('../images/hovercard.svg');
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: auto;
-    
     display: flex;
     justify-content:center;
     align-items: center;
@@ -88,7 +81,7 @@
 .about-card-heading{
     width: 100%;
     text-align: center;
-    font-size: 5vw;
+    font-size: 6.5vw;
 }
 .about-text{
     font-weight: 200;
