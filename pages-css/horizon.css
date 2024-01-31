@@ -48,7 +48,7 @@
 }
 .about-row{
     width: 90%;
-    height: 20rem;
+    height: auto;
     overflow: hidden;
     flex-wrap: wrap;
 
