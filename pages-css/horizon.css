@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Ikaros Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+      url('images/Ikaros.ttf') format('woff'),
+      url('images/Ikaros-Regular.otf') format('woff3');
+  }
+  @font-face {
+    font-family: 'Ikaros Sans';
+    font-style: normal;
+    font-weight: 200;
+    src: local(''),
+    url('images/Ikaros-Light.otf') format('woff2');
+  }
+  
+
+.horizon-page{
+    font-family: 'Ikaros Sans';
+}
+.iith-heading-hor{
+    font-size: 2rem;
+    font-weight: 200;
+}
+.hor-heading-hor{
+    font-size: 7.5rem;
+    font-weight: 400;
+}
+.hor-button button{
+    box-shadow: 0px 0px 20px rgba(36,102,250,0.5);
+}
+.hor-button button:hover{
+    box-shadow: 0px 0px 50px rgba(69, 115, 213, 0.6);
+    cursor: pointer;
+}
