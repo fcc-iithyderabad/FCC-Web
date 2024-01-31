@@ -31,6 +31,7 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 }
 /* HEADER CSS */
@@ -462,6 +463,7 @@ header {
   .about-section {
     padding-top: 2%;
     flex-direction: column;
+    overflow: hidden;
   }
   .who-head {
     width: 80%;
@@ -518,7 +520,7 @@ header {
 
 .what-cards {
   width: 90%;
-  height: auto;
+  height: 20rem;
 
   display: flex;
   justify-content: space-between;
@@ -542,23 +544,23 @@ header {
   backdrop-filter: blur(6px);
   padding: auto;
 }
-.what-subcard-link{
-  width: 90%;
-  height: 90%;
-  text-decoration: none;
-}
 .what-subcard{
   margin: auto;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.256);
-  background-image: url("images/Group\ 30.svg");
+  background-image: url("images/Noisebg.svg");
   background-position: center; 
   background-repeat: no-repeat; 
-  background-size: cover; 
   background-size: auto;
   padding: 4%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 .what-subcard:hover{
   cursor: pointer;
@@ -607,15 +609,27 @@ header {
 
   .what-cards {
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    height: auto;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
   }
   .what-card{
-    width: 50%;
-    height: 50rem;
+    width: 80%;
+    height: 20rem;
+  }
+  .subcard-top p{
+    font-size: 5vw;
+  }
+  .subcard-bottom p{
+    font-family: 'Ikaros Sans' , sans-serif;
+    font-size: 5.75vw;
+    line-height: 103%;
+    font-weight: 200;
   }
 }
+
 
 
 /* FOOTER */
