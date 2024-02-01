@@ -106,12 +106,13 @@ header {
 }
 .links {
   background-color: transparent !important;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(100px);
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .offcanvas-header {
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(10px);
 }
 .toggle-links {
   box-shadow: inset rgba(126, 71, 241, 0.4);
