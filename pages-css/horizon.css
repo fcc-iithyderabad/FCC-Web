@@ -24,6 +24,18 @@
   font-size: 7.5vw;
   font-weight: 400;
 }
+@media screen and (max-width:800px) {
+  .iith-heading-hor {
+    color: #1270ed;
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  .hor-heading-hor {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  
+}
 .hor-button button {
   box-shadow: 0px 0px 20px rgba(36, 102, 250, 0.5);
 }
@@ -86,3 +98,42 @@
 }
 
 
+/* Past Speakers Section */
+.past-speakers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+}
+.speakers-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90%;
+}
+.speakers-heading p{
+  font-size: 5rem;
+}
+.speakers-grid{
+  gap:10px;
+}
+.speaker-card{
+  width: 20rem;
+  height: 20rem;
+}
+
+@media screen and (max-width:800px) {
+  .speakers-heading p{
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+  .speaker-card{
+    width: 15rem;
+    height: 15rem;
+  }
+}

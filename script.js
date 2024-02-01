@@ -59,3 +59,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000);
 });
 
+$(".what-card").on('click',function(){
+    window.open('pages/Horizon.html' )
+    return false;
+})
+
+document.querySelector('.scroll').addEventListener('scroll', function() {
+    console.log('Event worked');
+});

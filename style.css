@@ -25,6 +25,8 @@ body {
   width: 100%;
   background-color: rgb(0, 0, 0);
   padding: 0;
+  overflow-x: hidden;
+
 }
 @media screen and (max-width: 600px) {
   body {
@@ -208,7 +210,7 @@ header {
 .titlecard {
   font-family: 'Ikaros Sans', sans-serif;
   font-weight: 200;
-  width: 60%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -276,18 +278,19 @@ header {
 
 /* Horizon Card */
 .cardbox {
-  width: 35%;
+  width: 45%;
   height: 100%;
 }
 
 .horizon-card {
+  margin: auto;
   padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "Nova Square", sans-serif;
-  width: 26rem;
+  width: 420px;
   height: 17rem;
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.256);
@@ -490,7 +493,9 @@ header {
 .what-we-do {
   height: auto;
   width: 100%;
+
   font-family: 'Ikaros Sans', sans-serif;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -520,11 +525,11 @@ header {
 }
 
 .what-cards {
-  width: 90%;
-  height: 20rem;
+  width: 95%;
+  height: auto;
 
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   flex-wrap: wrap;
 }
 .what-card {
@@ -534,28 +539,12 @@ header {
 
   width: 30%;
   height: auto;
-  border-radius: 2rem;
-  
-  border: 1px solid rgba(255, 255, 255, 0.256);
-  background: linear-gradient(
-    180deg,
-    rgba(47, 73, 221, 0.5) -36.57%,
-    rgba(217, 217, 217, 0) 141.73%
-  );
-  backdrop-filter: blur(6px);
-  padding: auto;
+
 }
 .what-subcard{
   margin: auto;
-  width: 90%;
-  height: 90%;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.256);
-  background-image: url("images/Noisebg.svg");
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: auto;
-  padding: 4%;
+  width: 100%;
+  height: 100%;
   
   display: flex;
   flex-direction: column;
@@ -563,9 +552,8 @@ header {
   align-items: center;
   
 }
-.what-subcard:hover{
+.what-card img:hover{
   cursor: pointer;
-  box-shadow: 10px 20px rgba(0 , 0, 0, 0.5);
 }
 
 .what-subcard div{
@@ -578,20 +566,7 @@ header {
   align-items: flex-start;
   justify-content: space-between;
 }
-.subcard-top img{
-  width: auto;
-}
-.subcard-bottom{
-  display: flex;
-  align-items: end;
-  justify-content: flex-start;
-}
-.subcard-bottom p{
-  font-family: 'Ikaros Sans' , sans-serif;
-  font-size: 2.75vw;
-  line-height: 103%;
-  font-weight: 200;
-}
+
 @media screen and (max-width: 800px) {
   .what-we-do{
     display: flex;
@@ -600,7 +575,7 @@ header {
   }
 
   .what-heading{
-    font-size: 7vw;
+    font-size: 4rem;
     padding: 2%;
     text-align: center;
   }
@@ -618,7 +593,10 @@ header {
   }
   .what-card{
     width: 80%;
-    height: 20rem;
+
+  }
+  .what-card img:hover{
+    cursor: pointer;
   }
   .subcard-top p{
     font-size: 5vw;
@@ -633,50 +611,34 @@ header {
 
 
 
-/* FOOTER */
-.footer{
-  margin: auto;
-  font-family: 'Ikaros Sans';
-  position: relative;
-  overflow: hidden;
-}
-footer{
-  background-color: rgb(15,70,144);
-  padding-top: 4%;
-  padding-right: 4%;
-  padding-left: 4%;
-}
-.nav-item a{
-  color: white;
-}
-.white-noise1 {
-  background-color: white;
-  width: 30%;
-  height: 30%;
-  border-radius: 100%;
-  filter: blur(200px);
-}
-.white1-1 {
-  position: absolute;
-  bottom: 30px;
-  right: -20px;
-}
-.white2-1 {
-  position: absolute;
-  top: 0px;
-  left: -200px;
-}
 
 
 /* Our engagements Section */
 
 .engagements {
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  overflow: hidden;
   font-family: 'Ikaros Sans';
+}
+.orange-bg{
+  z-index: -1;
+  position: absolute;
+  right: -10%;
+  width: 30%;
+  height: 20%;
+  border-radius: 100%;
+  background-color: #FA7E59;
+  transform: rotate(-15deg);
+ filter: blur(250px);
+}
+@media screen and (max-width:800px) {
+  .orange-bg{
+    filter: blur(120px);
+  }
 }
 .engage-heading {
   width: 90%;
@@ -687,7 +649,7 @@ footer{
 }
 .engage-heading p {
   width: 60%;
-  font-size: 4vw;
+  font-size: 6vw;
   text-align: center;
 }
 @media screen and (max-width:800px) {
@@ -698,28 +660,34 @@ footer{
   }
   
 }
-
+.scroll{
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  /* overflow: auto; */
+}
 .engage-grid {
   display: grid;
   grid-template-rows: repeat(4, 3fr);
   grid-template-columns: repeat(3, 2fr);
   width: 84%;
-  height: auto;
+  height: 80%;
+  overflow: auto;
   gap: 10px;
 }
 .engage-grid-card {
   background: #f1eeee;
   backdrop-filter: blur(52px) brightness(100%);
   border-image: linear-gradient(to bottom, rgb(98, 203, 205), rgb(84, 196, 228))
-    1;
+  1;
   background: linear-gradient(
     180deg,
     rgba(217, 217, 217, 0.25) 0%,
     rgba(217, 217, 217, 0.079) 100%
-  );
-  border-radius: 1rem;
+    );
+    border-radius: 1rem;
 
-  display: flex;
+    display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -752,7 +720,9 @@ footer{
 #grid-card2 {
   grid-column: 2 / span 2;
   grid-row: 1 / span 2;
-
+  height: 100%;
+  overflow: auto;
+  
   background-color: #0000001a;
   border-radius: 25px;
   background: linear-gradient(
@@ -761,35 +731,35 @@ footer{
     rgb(241, 95, 100) 31.11%,
     rgb(228, 42, 131) 60.54%,
     rgb(107, 41, 213) 100%
-  );
-}
-#grid-card2 p {
+    );
+  }
+  #grid-card2 p {
     font-size: 4vw;
-}
-
-#grid-card3 {
-  grid-column: 4 / span 1;
+  }
+  
+  #grid-card3 {
+    grid-column: 4 / span 1;
   grid-row: 1 / span 1;
 }
 #grid-card3 p {
-    background: linear-gradient(
+  background: linear-gradient(
         180deg,
         rgb(240, 237.12, 159) 0%,
         rgb(251, 166, 109) 100%
-      );
-      -webkit-background-clip: text !important;
+        );
+        -webkit-background-clip: text !important;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 400;
       color: transparent;
-}
-
-#grid-card4 {
-  grid-column: 1 / span 1;
+    }
+    
+    #grid-card4 {
+      grid-column: 1 / span 1;
   grid-row: 2 / span 1;
 }
 #grid-card4 p {
-    background: linear-gradient(
+  background: linear-gradient(
         180deg,
         rgb(69, 194, 245) 0%,
         rgb(114, 98, 225) 100%
@@ -799,15 +769,15 @@ footer{
       -webkit-text-fill-color: transparent;
       font-weight: 400;
       color: transparent;
-}
-
-#grid-card5 {
-  grid-column: 4 / span 1;
-  grid-row: 2 / span 1;
-}
-#grid-card5 p {
+    }
+    
+    #grid-card5 {
+      grid-column: 4 / span 1;
+      grid-row: 2 / span 1;
+    }
+    #grid-card5 p {
     background: linear-gradient(
-        180deg,
+      180deg,
         rgb(251, 166, 109) 0%,
         rgb(248, 76, 64) 100%
       );
@@ -816,14 +786,14 @@ footer{
       -webkit-text-fill-color: transparent;
       font-weight: 400;
       color: transparent;
-}
-
-#grid-card6 {
-  grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
-}
+    }
+    
+    #grid-card6 {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+    }
 #grid-card6 p {
-    color: white;
+  color: white;
 }
 #grid-card6 .upto{
   font-size: 2vw;
@@ -846,27 +816,63 @@ footer{
       180deg,
       rgb(247, 235, 149) 0%,
       rgb(177, 206, 71)100%
-    );
+      );
     -webkit-background-clip: text !important;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 400;
     color: transparent;
-}
-
-#grid-card8 {
-  grid-column: 4 / span 1;
-  grid-row: 3 / span 1;
-}
-#grid-card8 p {
+  }
+  
+  #grid-card8 {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+  }
+  #grid-card8 p {
     background: linear-gradient(
         90deg,
         rgb(210, 228, 143) 0%,
         rgb(66, 193, 153)70.63%
-      );
+        );
       -webkit-background-clip: text !important;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 600;
       color: transparent;
-}
+    }
+
+
+
+    /* FOOTER */
+    .footer{
+      margin: auto;
+      font-family: 'Ikaros Sans';
+      position: relative;
+      overflow: hidden;
+    }
+    footer{
+      background-color: rgb(15,70,144);
+      padding-top: 4%;
+      padding-right: 4%;
+      padding-left: 4%;
+    }
+    .nav-item a{
+      color: white;
+    }
+    .white-noise1 {
+      background-color: white;
+      width: 30%;
+      height: 30%;
+      border-radius: 100%;
+      filter: blur(200px);
+    }
+    .white1-1 {
+      position: absolute;
+      bottom: 30px;
+      right: -20px;
+    }
+    .white2-1 {
+      position: absolute;
+      top: 0px;
+      left: -200px;
+    }
