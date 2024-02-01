@@ -67,3 +67,15 @@ $(".what-card").on('click',function(){
 document.querySelector('.scroll').addEventListener('scroll', function() {
     console.log('Event worked');
 });
+
+$(document).ready(function() {
+    // Pause the animation on hover to prevent interference with user interaction
+    $(".hor-sponsors-carousel").on('hover',function() {
+      $(".hor-sponsors-carousel").css("animation-play-state", "paused");
+    }, function() {
+      $(".hor-sponsors-carousel").css("animation-play-state", "running");
+    });
+  });
+  
+
+  
