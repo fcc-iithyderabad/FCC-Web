@@ -223,9 +223,9 @@ header {
   font-family: 'Ikaros Sans', sans-serif;
 
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .fcc-main-heading {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
   .iith-main-heading {
     font-size: 2.5rem;
