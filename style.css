@@ -666,3 +666,207 @@ footer{
   top: 0px;
   left: -200px;
 }
+
+
+/* Our engagements Section */
+
+.engagements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Ikaros Sans';
+}
+.engage-heading {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.engage-heading p {
+  width: 60%;
+  font-size: 4rem;
+  text-align: center;
+}
+@media screen and (max-width:800px) {
+  .engage-heading p {
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+  }
+  
+}
+
+.engage-grid {
+  display: grid;
+  grid-template-rows: repeat(4, 3fr);
+  grid-template-columns: repeat(3, 2fr);
+  width: 84%;
+  height: auto;
+  gap: 10px;
+}
+.engage-grid-card {
+  background: #f1eeee;
+  backdrop-filter: blur(52px) brightness(100%);
+  border-image: linear-gradient(to bottom, rgb(98, 203, 205), rgb(84, 196, 228))
+    1;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0.25) 0%,
+    rgba(217, 217, 217, 0.079) 100%
+  );
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.engage-grid-card p {
+  text-align: center;
+  height: auto;
+  width: 90%;
+  font-size: 3vw;
+  line-height: 105%;
+}
+
+#grid-card1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+#grid-card1 p {
+  background: linear-gradient(
+    180deg,
+    rgb(107, 207, 189) 0%,
+    rgb(81, 194, 231) 97.4%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  color: transparent;
+}
+
+#grid-card2 {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+
+  background-color: #0000001a;
+  border-radius: 25px;
+  background: linear-gradient(
+    180deg,
+    rgb(250, 194.05, 51) 0%,
+    rgb(241, 95, 100) 31.11%,
+    rgb(228, 42, 131) 60.54%,
+    rgb(107, 41, 213) 100%
+  );
+}
+#grid-card2 p {
+    font-size: 4vw;
+}
+
+#grid-card3 {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+}
+#grid-card3 p {
+    background: linear-gradient(
+        180deg,
+        rgb(240, 237.12, 159) 0%,
+        rgb(251, 166, 109) 100%
+      );
+      -webkit-background-clip: text !important;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      color: transparent;
+}
+
+#grid-card4 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+#grid-card4 p {
+    background: linear-gradient(
+        180deg,
+        rgb(69, 194, 245) 0%,
+        rgb(114, 98, 225) 100%
+      );
+      -webkit-background-clip: text !important;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      color: transparent;
+}
+
+#grid-card5 {
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+}
+#grid-card5 p {
+    background: linear-gradient(
+        180deg,
+        rgb(251, 166, 109) 0%,
+        rgb(248, 76, 64) 100%
+      );
+      -webkit-background-clip: text !important;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      color: transparent;
+}
+
+#grid-card6 {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+#grid-card6 p {
+    color: white;
+}
+#grid-card6 .upto{
+  font-size: 2vw;
+}
+#grid-card6 .x {
+  font-size: 5vw;
+}
+#grid-card6 .para {
+  font-size: 1.5vw;
+  font-weight: 200;
+}
+
+#grid-card7 {
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 1;
+}
+#grid-card7 p {
+  height: auto;
+  background: linear-gradient(
+      180deg,
+      rgb(247, 235, 149) 0%,
+      rgb(177, 206, 71)100%
+    );
+    -webkit-background-clip: text !important;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    color: transparent;
+}
+
+#grid-card8 {
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 1;
+}
+#grid-card8 p {
+    background: linear-gradient(
+        90deg,
+        rgb(210, 228, 143) 0%,
+        rgb(66, 193, 153)70.63%
+      );
+      -webkit-background-clip: text !important;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+      color: transparent;
+}
