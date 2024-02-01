@@ -134,7 +134,8 @@
   text-align: center;
   height: auto;
   width: 90%;
-  font-size: 2.5vw;
+  font-size: 3vw;
+  line-height: 100%;
 }
 
 #grid-card1 {
