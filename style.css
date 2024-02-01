@@ -687,13 +687,13 @@ footer{
 }
 .engage-heading p {
   width: 60%;
-  font-size: 4rem;
+  font-size: 4vw;
   text-align: center;
 }
 @media screen and (max-width:800px) {
   .engage-heading p {
     width: 100%;
-    font-size: 4rem;
+    font-size: 7vw;
     text-align: center;
   }
   
