@@ -580,8 +580,12 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.what-card img:hover {
+.card-image:hover{
   cursor: pointer;
+  transform: translateX(200px);
+  transform: translateY(-20px);
+  background-color: rgba(0, 0, 0, 0.221);
+  border-radius: 3rem;
 }
 
 .what-subcard div {
