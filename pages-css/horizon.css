@@ -17,7 +17,7 @@
 }
 .iith-heading-hor {
   color: #1270ed;
-  font-size: 2.3rem;
+  font-size: 2.3vw;
   font-weight: 400;
 }
 .hor-heading-hor {
@@ -28,14 +28,18 @@
 @media screen and (max-width:800px) {
   .iith-heading-hor {
     color: #1270ed;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 400;
   }
   .hor-heading-hor {
     font-size: 4rem;
     font-weight: 400;
   }
-  
+  .hor-button button{
+    margin: auto;
+    align-self: center;
+    width: 70%;
+  }
   
 }
 .hor-button button {

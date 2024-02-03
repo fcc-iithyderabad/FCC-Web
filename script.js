@@ -63,6 +63,10 @@ $(".what-card").on('click',function(){
     window.open('pages/Horizon.html' )
     return false;
 })
+$(".horizon-button").on('click',function(){
+    window.open('pages/Horizon.html' )
+    return false;
+})
 
 document.querySelector('.scroll').addEventListener('scroll', function() {
     console.log('Event worked');

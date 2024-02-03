@@ -1,19 +1,16 @@
 @font-face {
-  font-family: 'Ikaros Sans';
+  font-family: "Ikaros Sans";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-    url('images/Ikaros.ttf') format('woff'),
-    url('images/Ikaros-Regular.otf') format('woff3');
+  src: local(""), url("images/Ikaros.ttf") format("woff"),
+    url("images/Ikaros-Regular.otf") format("woff3");
 }
 @font-face {
-  font-family: 'Ikaros Sans';
+  font-family: "Ikaros Sans";
   font-style: normal;
   font-weight: 200;
-  src: local(''),
-  url('images/Ikaros-Light.otf') format('woff2');
+  src: local(""), url("images/Ikaros-Light.otf") format("woff2");
 }
-
 
 * {
   padding: 0;
@@ -21,12 +18,9 @@
   color: white;
 }
 body {
-  margin: 0;
   width: 100%;
   background-color: rgb(0, 0, 0);
-  padding: 0;
   overflow-x: hidden;
-
 }
 @media screen and (max-width: 600px) {
   body {
@@ -48,7 +42,7 @@ header {
 }
 .logotext {
   font-size: 3rem;
-  font-family: 'Ikaros Sans', sans-serif;
+  font-family: "Ikaros Sans", sans-serif;
   background: linear-gradient(124deg, #1680e8 0%, #2bc9d3 133.32%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -146,31 +140,25 @@ header {
   left: -10%;
   border-radius: 100%;
   background: rgba(126, 71, 241, 0.4);
-  /* background: rgba(228, 216, 255, 0.4); */
   filter: blur(290px);
   z-index: -1;
 }
 .glow-block {
   position: absolute;
-  left: 10px;
+  left: 20%;
   z-index: -10;
-  filter: blur(10px);
 }
 .glow-block-1 {
-  position: fixed;
-  left: 85vw;
-
+  position: absolute;
+  right: 50%;
+  top: 80%;
   z-index: -10;
-  filter: blur(10px);
 }
-@media screen and (max-width:800px) {
-  
-  .glow-block-1 {
-    position: fixed;
-
-    z-index: -10;
-    filter: blur(0px);
-  }
+.glow-block-2 {
+  position: absolute;
+  right: -4%;
+  top: 60%;
+  z-index: -10;
 }
 .svgblur1 {
   position: fixed;
@@ -189,6 +177,24 @@ header {
   right: 15vw;
   transform: rotate(20deg);
   z-index: -20;
+}
+@media screen and (max-width: 1000px) {
+  .glow-block {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    z-index: -10;
+    filter: blur(3px);
+  }
+  .glow-block-1 {
+    position: absolute;
+    right: 0;
+    top: 80%;
+    z-index: -10;
+  }
+  .glow-block-2 {
+    display: none;
+  }
 }
 
 
@@ -210,6 +216,7 @@ header {
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: end;
 }
 .subcard {
   display: flex;
@@ -218,7 +225,7 @@ header {
   justify-content: space-between;
 }
 .titlecard {
-  font-family: 'Ikaros Sans', sans-serif;
+  font-family: "Ikaros Sans", sans-serif;
   font-weight: 200;
   width: 50%;
   height: 100%;
@@ -231,39 +238,66 @@ header {
   color: #1270ed;
   font-size: 5.5rem;
 }
+
 .iith-main-heading {
   font-size: 2.5rem;
-  font-family: 'Ikaros Sans', sans-serif;
+  font-family: "Ikaros Sans", sans-serif;
 }
-.horizon-button{
-  font-size: 2em;
+.horizon-button {
+
+  font-size: 2.2em;
   text-align: center;
   min-width: 300px;
   max-width: 400px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 12px rgba(69, 115, 213, 0.6);
+}
+.horizon-button:hover {
+  box-shadow: 0px 0px 25px rgba(69, 115, 213, 0.6);
+  cursor: pointer;
 }
 
+@media screen and (max-width: 1000px) {
+  .subcard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .titlecard {
+    text-align: center;
+    width: auto;
+    align-self: center;
+  }
+  .horizon-button{
+    align-self: center;
+    margin: auto;   
+  }
+}
 @media screen and (max-width: 800px) {
   .fcc-main-heading {
-    font-size: 4.5rem;
+    font-size: 4rem;
+    width: auto;
   }
   .iith-main-heading {
     font-size: 2.5rem;
   }
 }
-@media screen and (max-width: 1000px) {
-  .subcard {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .titlecard {
-    align-self: flex-start;
-  }
-}
 
+@media screen and (max-width: 600px) {
+  .fcc-main-heading {
+    font-size: 3.5rem;
+    width: auto;
+  }
+  .iith-main-heading {
+    font-size: 1.5rem;
+  }
+
+}
 /* Horizon Card */
 .cardbox {
   width: 45%;
   height: 100%;
+  display: flex;
+  align-items: end;
 }
 
 .horizon-card {
@@ -273,8 +307,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Nova Square", sans-serif;
-  width: 420px;
+  font-family: "Ikaros Sans", sans-serif;
+  min-width: 420px;
   height: 17rem;
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.256);
@@ -284,6 +318,11 @@ header {
     rgba(217, 217, 217, 0) 141.73%
   );
   backdrop-filter: blur(6px);
+}
+@media screen and (max-width: 500px) {
+  .horizon-card {
+    min-width: 300px;
+  }
 }
 
 .heading {
@@ -352,13 +391,12 @@ header {
 .mission {
   text-align: left;
   color: #fff;
-  font-family: 'Ikaros Sans', sans-serif;
+  font-family: "Ikaros Sans", sans-serif;
   font-size: 2.1875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding-left: 2%;
-
 }
 .quote-text {
   width: auto;
@@ -377,8 +415,8 @@ header {
   right: 0;
   z-index: -5;
 }
-.quote-span{
-  font-family: 'Lato', sans-serif;
+.quote-span {
+  font-family: "Lato", sans-serif;
   font-weight: 700;
 }
 
@@ -409,7 +447,7 @@ header {
   mix-blend-mode: exclusion;
 }
 .who-head {
-  font-family: 'Ikaros Sans', sans-serif;
+  font-family: "Ikaros Sans", sans-serif;
   display: flex;
   align-items: baseline;
   height: 50%;
@@ -423,7 +461,7 @@ header {
   padding-left: 2%;
 }
 .who-text {
-  font-family: 'Ikaros Sans', sans-serif;
+  font-family: "Ikaros Sans", sans-serif;
   width: 90%;
   height: auto;
   color: #f2f2f2;
@@ -486,7 +524,7 @@ header {
   height: auto;
   width: 100%;
 
-  font-family: 'Ikaros Sans', sans-serif;
+  font-family: "Ikaros Sans", sans-serif;
 
   display: flex;
   flex-direction: column;
@@ -509,10 +547,10 @@ header {
   font-size: 6.9vw;
   width: 85%;
   line-height: 100%;
-  padding-top:3%;
-  padding-bottom:2%;
+  padding-top: 3%;
+  padding-bottom: 2%;
 }
-.what-heading p{
+.what-heading p {
   width: 40%;
 }
 
@@ -521,7 +559,7 @@ header {
   height: auto;
 
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .what-card {
@@ -531,47 +569,45 @@ header {
 
   width: 30%;
   height: auto;
-
 }
-.what-subcard{
+.what-subcard {
   margin: auto;
   width: 100%;
   height: 100%;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
 }
-.what-card img:hover{
+.what-card img:hover {
   cursor: pointer;
 }
 
-.what-subcard div{
-  font-family: 'Open Sans', sans-serif;
+.what-subcard div {
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.5vw;
 }
-.subcard-top{
+.subcard-top {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 800px) {
-  .what-we-do{
+  .what-we-do {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .what-heading{
+  .what-heading {
     font-size: 4rem;
     padding: 2%;
     text-align: center;
   }
-  .what-heading p{
+  .what-heading p {
     width: 100%;
   }
 
@@ -583,52 +619,48 @@ header {
     justify-content: space-between;
     gap: 30px;
   }
-  .what-card{
+  .what-card {
     width: 80%;
-
   }
-  .what-card img:hover{
+  .what-card img:hover {
     cursor: pointer;
   }
-  .subcard-top p{
+  .subcard-top p {
     font-size: 5vw;
   }
-  .subcard-bottom p{
-    font-family: 'Ikaros Sans' , sans-serif;
+  .subcard-bottom p {
+    font-family: "Ikaros Sans", sans-serif;
     font-size: 5.75vw;
     line-height: 103%;
     font-weight: 200;
   }
 }
 
-
-
-
-
 /* Our engagements Section */
 
 .engagements {
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  font-family: 'Ikaros Sans';
+  font-family: "Ikaros Sans";
 }
-.orange-bg{
+.orange-bg {
   z-index: -1;
   position: absolute;
   right: -10%;
   width: 30%;
   height: 20%;
   border-radius: 100%;
-  background-color: #FA7E59;
+  background-color: #fa7e59;
   transform: rotate(-15deg);
- filter: blur(250px);
+  filter: blur(250px);
+  overflow: hidden;
 }
-@media screen and (max-width:800px) {
-  .orange-bg{
+@media screen and (max-width: 800px) {
+  .orange-bg {
     filter: blur(120px);
   }
 }
@@ -644,15 +676,14 @@ header {
   font-size: 6vw;
   text-align: center;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .engage-heading p {
     width: 100%;
     font-size: 7vw;
     text-align: center;
   }
-  
 }
-.scroll{
+.scroll {
   width: 300px;
   height: 300px;
   background-color: red;
@@ -671,15 +702,15 @@ header {
   background: #f1eeee;
   backdrop-filter: blur(52px) brightness(100%);
   border-image: linear-gradient(to bottom, rgb(98, 203, 205), rgb(84, 196, 228))
-  1;
+    1;
   background: linear-gradient(
     180deg,
     rgba(217, 217, 217, 0.25) 0%,
     rgba(217, 217, 217, 0.079) 100%
-    );
-    border-radius: 1rem;
+  );
+  border-radius: 1rem;
 
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -714,7 +745,7 @@ header {
   grid-row: 1 / span 2;
   height: 100%;
   overflow: auto;
-  
+
   background-color: #0000001a;
   border-radius: 25px;
   background: linear-gradient(
@@ -723,71 +754,71 @@ header {
     rgb(241, 95, 100) 31.11%,
     rgb(228, 42, 131) 60.54%,
     rgb(107, 41, 213) 100%
-    );
-  }
-  #grid-card2 p {
-    font-size: 4vw;
-  }
-  
-  #grid-card3 {
-    grid-column: 4 / span 1;
+  );
+}
+#grid-card2 p {
+  font-size: 4vw;
+}
+
+#grid-card3 {
+  grid-column: 4 / span 1;
   grid-row: 1 / span 1;
 }
 #grid-card3 p {
   background: linear-gradient(
-        180deg,
-        rgb(240, 237.12, 159) 0%,
-        rgb(251, 166, 109) 100%
-        );
-        -webkit-background-clip: text !important;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 400;
-      color: transparent;
-    }
-    
-    #grid-card4 {
-      grid-column: 1 / span 1;
+    180deg,
+    rgb(240, 237.12, 159) 0%,
+    rgb(251, 166, 109) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  color: transparent;
+}
+
+#grid-card4 {
+  grid-column: 1 / span 1;
   grid-row: 2 / span 1;
 }
 #grid-card4 p {
   background: linear-gradient(
-        180deg,
-        rgb(69, 194, 245) 0%,
-        rgb(114, 98, 225) 100%
-      );
-      -webkit-background-clip: text !important;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 400;
-      color: transparent;
-    }
-    
-    #grid-card5 {
-      grid-column: 4 / span 1;
-      grid-row: 2 / span 1;
-    }
-    #grid-card5 p {
-    background: linear-gradient(
-      180deg,
-        rgb(251, 166, 109) 0%,
-        rgb(248, 76, 64) 100%
-      );
-      -webkit-background-clip: text !important;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 400;
-      color: transparent;
-    }
-    
-    #grid-card6 {
-      grid-column: 1 / span 1;
-      grid-row: 3 / span 1;
-    }
+    180deg,
+    rgb(69, 194, 245) 0%,
+    rgb(114, 98, 225) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  color: transparent;
+}
+
+#grid-card5 {
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+}
+#grid-card5 p {
+  background: linear-gradient(
+    180deg,
+    rgb(251, 166, 109) 0%,
+    rgb(248, 76, 64) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  color: transparent;
+}
+
+#grid-card6 {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
 #grid-card6 p {
   color: white;
 }
-#grid-card6 .upto{
+#grid-card6 .upto {
   font-size: 2vw;
 }
 #grid-card6 .x {
@@ -805,66 +836,64 @@ header {
 #grid-card7 p {
   height: auto;
   background: linear-gradient(
-      180deg,
-      rgb(247, 235, 149) 0%,
-      rgb(177, 206, 71)100%
-      );
-    -webkit-background-clip: text !important;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 400;
-    color: transparent;
-  }
-  
-  #grid-card8 {
-    grid-column: 4 / span 1;
-    grid-row: 3 / span 1;
-  }
-  #grid-card8 p {
-    background: linear-gradient(
-        90deg,
-        rgb(210, 228, 143) 0%,
-        rgb(66, 193, 153)70.63%
-        );
-      -webkit-background-clip: text !important;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 600;
-      color: transparent;
-    }
+    180deg,
+    rgb(247, 235, 149) 0%,
+    rgb(177, 206, 71) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  color: transparent;
+}
 
+#grid-card8 {
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 1;
+}
+#grid-card8 p {
+  background: linear-gradient(
+    90deg,
+    rgb(210, 228, 143) 0%,
+    rgb(66, 193, 153) 70.63%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  color: transparent;
+}
 
-
-    /* FOOTER */
-    .footer{
-      margin: auto;
-      font-family: 'Ikaros Sans';
-      position: relative;
-      overflow: hidden;
-    }
-    footer{
-      background-color: rgb(15,70,144);
-      padding-top: 4%;
-      padding-right: 4%;
-      padding-left: 4%;
-    }
-    .nav-item a{
-      color: white;
-    }
-    .white-noise1 {
-      background-color: white;
-      width: 30%;
-      height: 30%;
-      border-radius: 100%;
-      filter: blur(200px);
-    }
-    .white1-1 {
-      position: absolute;
-      bottom: 30px;
-      right: -20px;
-    }
-    .white2-1 {
-      position: absolute;
-      top: 0px;
-      left: -200px;
-    }
+/* FOOTER */
+.footer {
+  margin: auto;
+  font-family: "Ikaros Sans";
+  position: relative;
+  overflow: hidden;
+}
+footer {
+  background-color: rgb(15, 70, 144);
+  padding-top: 4%;
+  padding-right: 4%;
+  padding-left: 4%;
+}
+.nav-item a {
+  color: white;
+}
+.white-noise1 {
+  background-color: white;
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  filter: blur(200px);
+}
+.white1-1 {
+  position: absolute;
+  bottom: 30px;
+  right: -20px;
+}
+.white2-1 {
+  position: absolute;
+  top: 0px;
+  left: -200px;
+}
