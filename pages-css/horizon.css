@@ -58,11 +58,11 @@
 .about-row {
   width: 100%;
   height: auto;
-  flex-wrap: wrap;
-
+  
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .about-outcard {
@@ -79,7 +79,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  
   width: 100%;
   height: auto;
 }
@@ -87,7 +87,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   width: 90%;
 }
 .speakers-heading p{
@@ -97,21 +97,10 @@
   gap:10px;
 }
 .speaker-card{
-  width: 20rem;
-  height: 20rem;
+  width:23%;
+  height: auto;
 }
 
-@media screen and (max-width:800px) {
-  .speakers-heading p{
-    font-size: 3rem;
-    width: 100%;
-    text-align: center;
-  }
-  .speaker-card{
-    width: 15rem;
-    height: 15rem;
-  }
-}
 
 /* Sponsors section */
 .hor-sponsors {
@@ -156,5 +145,35 @@
   }
   100% {
     transform: translateX(-50%); /* Move back to the starting position */
+  }
+}
+
+@media screen and (max-width:800px) {
+  .speakers-heading p{
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+  .speaker-card{
+    width: 40%;
+    height: auto;
+  }
+  .about-row {
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .about-outcard {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sponsor-card {
+    flex: 0 0 25%; /* Equal width for each sponsor card, adjust as needed */
   }
 }
