@@ -155,9 +155,23 @@ header {
   left: 10px;
   z-index: -10;
   filter: blur(10px);
-  z-index: -20;
 }
+.glow-block-1 {
+  position: fixed;
+  left: 85vw;
 
+  z-index: -10;
+  filter: blur(10px);
+}
+@media screen and (max-width:800px) {
+  
+  .glow-block-1 {
+    position: fixed;
+
+    z-index: -10;
+    filter: blur(0px);
+  }
+}
 .svgblur1 {
   position: fixed;
   left: 30vw;
@@ -176,11 +190,7 @@ header {
   transform: rotate(20deg);
   z-index: -20;
 }
-.rightboxblur {
-  position: absolute;
-  transform: rotate(-60deg);
-  z-index: -20;
-}
+
 
 /* Landing Body */
 .landing {
