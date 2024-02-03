@@ -21,7 +21,8 @@
   font-weight: 400;
 }
 .hor-heading-hor {
-  font-size: 7.5vw;
+  width: 100%;
+  font-size: 10vw;
   font-weight: 400;
 }
 @media screen and (max-width:800px) {
@@ -34,6 +35,7 @@
     font-size: 4rem;
     font-weight: 400;
   }
+  
   
 }
 .hor-button button {
