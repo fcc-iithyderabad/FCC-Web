@@ -25,6 +25,21 @@ gsap.from(".arrow", {
     opacity: 0,
     scrollTrigger: '.quote'
 })
+gsap.from(".engagements" , {
+    y:200,
+    opacity:0,
+    duration:1,
+    scrub:true,
+    scrollTrigger: {
+        trigger:".engagements",
+        start:"30% bottom", //When the bottom of .two div reaches center of viewport, animation is triggered
+        end:"30% top",
+        toggleActions:"play reverse restart reverse",
+        markers:true,
+
+        //             onEnter onLeave onEnterBack onLeaveBack
+    },
+})
 
 document.addEventListener('DOMContentLoaded', function () {
     // Set the date we're counting down to
