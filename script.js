@@ -33,7 +33,7 @@ gsap.from(".engagements" , {
     scrollTrigger: {
         trigger:".engagements",
         start:"30% bottom", //When the bottom of .two div reaches center of viewport, animation is triggered
-        end:"30% top",
+        end:"60% top",
         toggleActions:"play reverse restart reverse",
         markers:true,
 
