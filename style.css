@@ -17,6 +17,9 @@
   box-sizing: border-box;
   color: white;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   width: 100%;
   background-color: rgb(0, 0, 0);
@@ -701,10 +704,10 @@ header {
 }
 .engage-grid {
   display: grid;
-  grid-template-rows: repeat(4, 3fr);
+  grid-template-rows: repeat(3, 3fr);
   grid-template-columns: repeat(3, 2fr);
   width: 84%;
-  height: 80%;
+  height: auto;
   overflow: auto;
   gap: 10px;
 }
@@ -874,39 +877,6 @@ header {
   color: transparent;
 }
 
-/* FOOTER */
-.footer {
-  margin: auto;
-  font-family: "Ikaros Sans";
-  position: relative;
-  overflow: hidden;
-}
-footer {
-  background-color: rgb(15, 70, 144);
-  padding-top: 4%;
-  padding-right: 4%;
-  padding-left: 4%;
-}
-.nav-item a {
-  color: white;
-}
-.white-noise1 {
-  background-color: white;
-  width: 30%;
-  height: 30%;
-  border-radius: 100%;
-  filter: blur(200px);
-}
-.white1-1 {
-  position: absolute;
-  bottom: 30px;
-  right: -20px;
-}
-.white2-1 {
-  position: absolute;
-  top: 0px;
-  left: -200px;
-}
 
 
 
@@ -931,3 +901,106 @@ footer {
   background-color: yellow;
   /* Styles for the back side of the card */
 }
+
+
+/* FLAGSHIP STYLING */
+.flagship{
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  
+  background-image: url("/images/flagship.png");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:cover;
+}
+
+.flagship-heading{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flagship-cards{
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flagship-heading p{
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  font-size: 4rem;
+}
+
+.flagship-card{
+  width: 30%;
+  height: auto;
+}
+.flagship-card:hover{
+  transform: translateY(-30px);
+}
+.flagship-card-lower{
+  transform: translateY(100px);
+}
+.flagship-card-lower:hover{
+  transform: translateY(10px);
+}
+
+@media screen and (max-width:800px){
+  
+  .flagship-heading p{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    font-size: 4vw;
+  }
+  .flagship-card-lower{
+    transform: translateY(20px);
+  }
+}
+
+/* FOOTER */
+  .footer {
+    margin: auto;
+    font-family: "Ikaros Sans";
+    position: relative;
+    overflow: hidden;
+  }
+  footer {
+    background-color: rgb(15, 70, 144);
+    padding-top: 4%;
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+  .nav-item a {
+    color: white;
+  }
+  .white-noise1 {
+    background-color: white;
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    filter: blur(200px);
+  }
+  .white1-1 {
+    position: absolute;
+    bottom: 30px;
+    right: -20px;
+  }
+  .white2-1 {
+    position: absolute;
+    top: 0px;
+    left: -200px;
+  }

@@ -40,6 +40,12 @@ gsap.from(".engagements" , {
         //             onEnter onLeave onEnterBack onLeaveBack
     },
 })
+gsap.from(".flagship" , {
+    y:200,
+    opacity:0,
+    duration:1,
+    scrub:true,
+})
 
 document.addEventListener('DOMContentLoaded', function () {
     // Set the date we're counting down to
