@@ -25,28 +25,50 @@ gsap.from(".arrow", {
     opacity: 0,
     scrollTrigger: '.quote'
 })
-gsap.from(".engagements" , {
-    y:200,
-    opacity:0,
-    duration:1,
-    scrub:true,
+// gsap.to(".engagements" , {
+//     y:-200,
+//     opacity:0,
+//     duration:1,
+//     scrub:true,
+//     scrollTrigger: {
+//         trigger:".engagements",
+//         start:"30% bottom", //When the bottom of .two div reaches center of viewport, animation is triggered
+//         end:"60% top",
+//         toggleActions:"none play reverse none",
+//         markers:false,
+
+//         //             onEnter onLeave onEnterBack onLeaveBack
+//     },
+// })
+gsap.to(".engagements", {
+    opacity: 0,
     scrollTrigger: {
-        trigger:".engagements",
-        start:"30% bottom", //When the bottom of .two div reaches center of viewport, animation is triggered
-        end:"60% top",
-        toggleActions:"play reverse restart reverse",
-        markers:false,
-
-        //             onEnter onLeave onEnterBack onLeaveBack
+        trigger: ".engagements",
+        start: "center top",
+        end: "bottom top",
+        scrub: true,
     },
-})
-gsap.from(".flagship" , {
-    y:200,
-    opacity:0,
-    duration:1,
-    scrub:true,
-})
-
+});
+// gsap.from(".flagship" , {
+//     y:200,
+//     opacity:0,
+//     duration:1,
+//     scrub:true,
+//     trigger:".engagements",
+//     start:"30% bottom", //When the bottom of .two div reaches center of viewport, animation is triggered
+//     end:"60% top",
+//     toggleActions:"none play reverse none",
+//     markers:false,
+// })
+gsap.from(".flagship", {
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".flagship",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+    },
+});
 document.addEventListener('DOMContentLoaded', function () {
     // Set the date we're counting down to
     const countDownDate = new Date("Feb 16, 2024 00:00:00").getTime();
