@@ -633,7 +633,7 @@ header {
     gap: 30px;
   }
   .what-card {
-    width: 80%;
+    width: 50%;
   }
   .what-card img:hover {
     cursor: pointer;
@@ -710,6 +710,9 @@ header {
   height: auto;
   overflow: auto;
   gap: 10px;
+}
+.engage-grid-zoom-out{
+  transform: translate3d(0,0,300);
 }
 .engage-grid-card {
   background: #f1eeee;

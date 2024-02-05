@@ -25,44 +25,23 @@ gsap.from(".arrow", {
     opacity: 0,
     scrollTrigger: '.quote'
 })
-// gsap.to(".engagements" , {
-//     y:-200,
-//     opacity:0,
-//     duration:1,
-//     scrub:true,
-//     scrollTrigger: {
-//         trigger:".engagements",
-//         start:"30% bottom", //When the bottom of .two div reaches center of viewport, animation is triggered
-//         end:"60% top",
-//         toggleActions:"none play reverse none",
-//         markers:false,
 
-//         //             onEnter onLeave onEnterBack onLeaveBack
-//     },
-// })
 gsap.to(".engagements", {
     opacity: 0,
+    duration: 1, // Adjust the duration as needed
     scrollTrigger: {
-        trigger: ".engagements",
-        start: "center top",
-        end: "bottom top",
-        scrub: true,
+      trigger: ".engagements",
+      start: "center center",
+      end: "bottom center",
+      scrub: true,
     },
 });
-// gsap.from(".flagship" , {
-//     y:200,
-//     opacity:0,
-//     duration:1,
-//     scrub:true,
-//     trigger:".engagements",
-//     start:"30% bottom", //When the bottom of .two div reaches center of viewport, animation is triggered
-//     end:"60% top",
-//     toggleActions:"none play reverse none",
-//     markers:false,
-// })
+
 gsap.from(".flagship", {
-    opacity: 0,
-    scrollTrigger: {
+      opacity: 0,
+      rotateX: 0,
+      duration: 1, // Adjust the duration as needed
+      scrollTrigger: {
         trigger: ".flagship",
         start: "top center",
         end: "bottom center",
