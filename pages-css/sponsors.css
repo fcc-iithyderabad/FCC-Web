@@ -37,6 +37,10 @@
     justify-content: center;
     border-radius: 2rem;
 }
+.sponsor-card img:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+}
 
 @media screen and (max-width:850px) {
     .sponsor-card{

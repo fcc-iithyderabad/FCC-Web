@@ -129,11 +129,11 @@
   text-align: center;
 }
 
-.hor-sponsors-carousel {
+.hor-sponsors-carousel-1 {
   display: flex;
   width: 100%; /* Set to twice the width of the container */
-  gap: 7%;
-  animation: scroll 20s linear infinite;
+  gap: 3%;
+  animation: scroll-1 40s linear infinite;
 }
 
 .sponsor-card {
@@ -145,12 +145,12 @@
   height: 100%;
 }
 
-@keyframes scroll {
+@keyframes scroll-1 {
   0% {
-    transform: translateX(0);
+    transform: translateX(-320%);
   }
   100% {
-    transform: translateX(-50%); /* Move back to the starting position */
+    transform: translateX(100%); /* Move back to the starting position */
   }
 }
 
