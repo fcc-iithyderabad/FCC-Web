@@ -141,14 +141,14 @@ header {
 }
 /* BACKGROUND ELEMENTS STYLING */
 .body-bg-grad {
-  width: 80vw;
-  height: 80vh;
+  width: 60vw;
+  height: 60vh;
   position: absolute;
   top: 20%;
   left: -10%;
   border-radius: 100%;
   background: rgba(126, 71, 241, 0.4);
-  filter: blur(290px);
+  filter: blur(250px);
   z-index: -1;
 }
 .glow-block {
@@ -232,6 +232,8 @@ header {
   width: 100%;
   height: 100%;
   justify-content: space-between;
+  align-items: center;
+
 }
 .titlecard {
   font-family: "Ikaros Sans", sans-serif;
@@ -246,6 +248,7 @@ header {
 .fcc-main-heading {
   color: #1270ed;
   font-size: 5.5rem;
+  font-weight:200;
 }
 
 .iith-main-heading {
@@ -270,6 +273,7 @@ header {
   .subcard {
     flex-direction: column;
     align-items: center;
+    margin: auto;
   }
   .titlecard {
     text-align: center;
@@ -306,7 +310,10 @@ header {
   width: 45%;
   height: 100%;
   display: flex;
-  align-items: end;
+  justify-content: center;
+  align-self: end;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .horizon-card {
@@ -401,7 +408,7 @@ header {
   text-align: left;
   color: #fff;
   font-family: "Ikaros Sans", sans-serif;
-  font-size: 2.1875rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -410,10 +417,13 @@ header {
 .quote-text {
   width: auto;
   height: auto;
-  font-size: 12vw;
-  font-weight: 700;
-  line-height: 100%;
+  font-size: 10vw;
+  font-weight: 400;
+  line-height: 80%;
   padding-left: 2%;
+}
+.who{
+  letter-spacing: 200%;
 }
 .arrow {
   display: flex;
@@ -426,7 +436,7 @@ header {
 }
 .quote-span {
   font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 /* YT Embed */
