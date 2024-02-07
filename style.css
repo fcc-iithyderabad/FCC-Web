@@ -990,6 +990,10 @@ header {
   .nav-item a {
     color: white;
   }
+  .nav-item a:hover {
+    color: white;
+    text-decoration: underline;
+  }
   .white-noise1 {
     background-color: white;
     width: 30%;
