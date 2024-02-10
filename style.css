@@ -938,24 +938,17 @@ header {
 .flagship-card{
   width: 30%;
   height: auto;
+  transition-duration: 0.3s;
+  transform: translateY(0);
 }
-
-#flagship-card-upper{
-  transition-duration:1s ;
-  transform: translateY(10px);
-}
-#flagship-card-upper:hover{
+.flagship-card:hover{
   cursor: pointer;
-  transition-duration: 2s;
-  transform: translateY(-30px);
+  transition-duration: 0.2s;
+  transform: translateY(-10px);
 }
 .flagship-card-lower{
-  transition-duration: 2s;
-  transform: translateY(100px);
-}
-.flagship-card-lower:hover{
-  transition-duration: 2s;
-  transform: translateY(10px);
+  transform: translateY(50px);
+
 }
 
 @media screen and (max-width:800px){
