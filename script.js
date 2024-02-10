@@ -1,3 +1,24 @@
+// import fs from "fs"
+// import fetch from "node-fetch"
+// async function fetchDataAndWriteToFile() {
+//     try {
+//         // Fetch data from API
+//         const response = await fetch('GET https://api.medium.com/v1/users/fcc-iith/publications');
+//         const data = await response.json();
+        
+//         // Convert data to JSON string
+//         const jsonData = JSON.stringify(data, null, 2); // Adding null and 2 for pretty formatting
+
+//         // Write JSON data to a file
+//         fs.writeFileSync('data.json', jsonData);
+        
+//         console.log('Data has been written to data.json');
+//     } catch (error) {
+//         console.error('Error fetching data:', error);
+//     }
+// };
+
+// fetchDataAndWriteToFile();
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -28,11 +49,11 @@ gsap.from(".arrow", {
 
 gsap.to(".engagements", {
     opacity: 0,
-    duration: 1, // Adjust the duration as needed
+    duration: 1, 
     scrollTrigger: {
       trigger: ".engagements",
-      start: "center center",
-      end: "bottom center",
+      start: "bottom center",
+      end: "bottom top",
       scrub: true,
     },
 });
@@ -40,7 +61,7 @@ gsap.to(".engagements", {
 gsap.from(".flagship", {
       opacity: 0,
       rotateX: 0,
-      duration: 1, // Adjust the duration as needed
+      duration: 1, 
       scrollTrigger: {
         trigger: ".flagship",
         start: "top center",
@@ -48,6 +69,7 @@ gsap.from(".flagship", {
         scrub: true,
     },
 });
+
 document.addEventListener('DOMContentLoaded', function () {
     // Set the date we're counting down to
     const countDownDate = new Date("Feb 16, 2024 00:00:00").getTime();
@@ -85,8 +107,16 @@ $(".what-card").on('click',function(){
     window.open('pages/Horizon.html' )
     return false;
 })
+$("#flagship-card-upper").on('click',function () {
+    window.open('pages/horizon.html');
+    return false;
+})
 $(".horizon-button").on('click',function(){
     window.open('pages/Horizon.html' )
+    return false;
+})
+$(".subscribe-button").on('click',function(){
+    window.open('https://fcc-iith.medium.com/' )
     return false;
 })
 
@@ -104,8 +134,8 @@ document.querySelector('.scroll').addEventListener('scroll', function() {
         }
       );
       
-  
 
+      
 
 
 

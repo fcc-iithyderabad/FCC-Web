@@ -37,7 +37,13 @@
     justify-content: center;
     border-radius: 2rem;
 }
+.sponsor-card img{
+    transition-duration: 0.3s;
+    transform: translateY(-1px);
+
+}
 .sponsor-card img:hover{
+    transition-duration: 0.3s;
     transform: translateY(-20px);
     cursor: pointer;
 }
