@@ -140,6 +140,10 @@ $(".subscribe-button").on('click',function(){
     window.open('https://fcc-iith.medium.com/' )
     return false;
 })
+$(".hor-button").click(function(){
+    window.open('https://www.instagram.com/fcc_iith/' )
+    return false;
+})
 
 document.querySelector('.scroll').addEventListener('scroll', function() {
     console.log('Event worked');
