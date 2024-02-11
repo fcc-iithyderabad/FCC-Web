@@ -47,7 +47,7 @@ gsap.from(".arrow", {
     scrollTrigger: '.quote'
 })
 
-gsap.to(".engagements", {
+gsap.to(".engage-grid", {
     opacity: 0,
     duration: 1, 
     scrollTrigger: {
