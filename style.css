@@ -441,8 +441,8 @@ header {
 /* YT Embed */
 .yt {
   margin: auto;
-  height: 90vh;
-  width: 90vw;
+  height: 95vh;
+  width: 95vw;
   z-index: -10;
 }
 @media screen and (max-width: 800px) {
