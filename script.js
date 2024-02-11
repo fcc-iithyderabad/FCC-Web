@@ -36,7 +36,7 @@ gsap.from(".quote-span", {
     duration: 0.5,
     y: "40",
     opacity: 0,
-    stagger: 0.5,
+    stagger: 0.2,
     scrollTrigger: '.quote'
 })
 gsap.from(".arrow", {
@@ -103,8 +103,29 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000);
 });
 
+
+// ANimation for horizon page
+gsap.from(".iith-heading-hor", {
+    duration: 0.5,
+    y: "40",
+    opacity: 0
+})
+gsap.from(".hor-heading-hor", {
+    duration: 0.5,
+    y: "40",
+    opacity: 0
+})
+gsap.from(".hor-button", {
+    duration: 0.5,
+    y: "40",
+    opacity: 0
+})
+
+
+
+
 $(".what-card").on('click',function(){
-    window.open('pages/Horizon.html' )
+    window.open('https://fcc-iith.medium.com/' )
     return false;
 })
 $("#flagship-card-upper").on('click',function () {
