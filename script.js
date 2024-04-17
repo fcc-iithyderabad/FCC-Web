@@ -104,6 +104,7 @@ gsap.from(".flagship", {
 // });
 
 
+
 // ANimation for horizon page
 gsap.from(".iith-heading-hor", {
     duration: 0.5,
@@ -140,25 +141,13 @@ $(".subscribe-button").on('click',function(){
     window.open('https://fcc-iith.medium.com/' )
     return false;
 })
-$(".hor-button").click(function(){
-    window.open('https://www.instagram.com/fcc_iith/' )
+$(".hor-button").on('click',function(){
+    window.open('Events.html' )
     return false;
 })
 
-document.querySelector('.scroll').addEventListener('scroll', function() {
-    console.log('Event worked');
-});
 
-    // Pause the animation on hover to prevent interference with user interaction
-    $(".hor-sponsors-carousel-1 img").hover(
-        function() {
-          $(".hor-sponsors-carousel-1").css("animation-play-state", "paused");
-        },
-        function() {
-          $(".hor-sponsors-carousel-1").css("animation-play-state", "running");
-        }
-      );
-      
+    
 
       
 

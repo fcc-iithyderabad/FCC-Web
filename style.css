@@ -82,7 +82,7 @@ header {
     display: block;
   }
 }
-.current-link{
+.current-link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,7 +205,6 @@ header {
   }
 }
 
-
 /* Landing Body */
 .landing {
   width: 100%;
@@ -214,7 +213,7 @@ header {
   padding-left: 2%;
 
   margin-bottom: 10%;
-
+  overflow-x: hidden;
 }
 @media screen and (max-width: 1100px) {
   .landing {
@@ -235,7 +234,6 @@ header {
   height: 100%;
   justify-content: space-between;
   align-items: center;
-
 }
 .titlecard {
   font-family: "Ikaros Sans", sans-serif;
@@ -250,7 +248,7 @@ header {
 .fcc-main-heading {
   color: #1270ed;
   font-size: 5.5rem;
-  font-weight:400;
+  font-weight: 400;
 }
 
 .iith-main-heading {
@@ -258,7 +256,6 @@ header {
   font-family: "Ikaros Sans", sans-serif;
 }
 .horizon-button {
-
   font-size: 2.2em;
   text-align: center;
   min-width: 300px;
@@ -282,9 +279,9 @@ header {
     width: auto;
     align-self: center;
   }
-  .horizon-button{
+  .horizon-button {
     align-self: center;
-    margin: auto;   
+    margin: auto;
   }
 }
 @media screen and (max-width: 800px) {
@@ -305,7 +302,6 @@ header {
   .iith-main-heading {
     font-size: 1.5rem;
   }
-
 }
 /* Horizon Card */
 .cardbox {
@@ -336,7 +332,7 @@ header {
     rgba(142, 141, 141, 0.5) -36.57%,
     rgba(217, 217, 217, 0) 141.73%
   );
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(36px);
 }
 @media screen and (max-width: 500px) {
   .horizon-card {
@@ -427,7 +423,7 @@ header {
   line-height: 80%;
   padding-left: 2%;
 }
-.who{
+.who {
   letter-spacing: 200%;
 }
 .arrow {
@@ -606,11 +602,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.card-image{
+.card-image {
   transition-duration: 0.4s;
-
 }
-.card-image:hover{
+.card-image:hover {
   cursor: pointer;
   transition-duration: 0.3s;
   transform: translateX(200px);
@@ -638,7 +633,7 @@ header {
   }
 
   .what-heading {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 2%;
     text-align: center;
   }
@@ -695,11 +690,7 @@ header {
   filter: blur(250px);
   overflow: hidden;
 }
-@media screen and (max-width: 800px) {
-  .orange-bg {
-    filter: blur(120px);
-  }
-}
+
 .engage-heading {
   width: 90%;
   height: 20%;
@@ -713,6 +704,13 @@ header {
   text-align: center;
 }
 @media screen and (max-width: 800px) {
+  .engagements {
+    display: none;
+  }
+  .orange-bg {
+    display: none;
+    filter: blur(120px);
+  }
   .engage-heading p {
     width: 100%;
     font-size: 7vw;
@@ -734,8 +732,8 @@ header {
   overflow: auto;
   gap: 10px;
 }
-.engage-grid-zoom-out{
-  transform: translate3d(0,0,300);
+.engage-grid-zoom-out {
+  transform: translate3d(0, 0, 300);
 }
 .engage-grid-card {
   background: #f1eeee;
@@ -763,7 +761,6 @@ header {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   border: 1px solid transparent;
-  
 }
 #grid-card1 p {
   background: linear-gradient(
@@ -855,7 +852,18 @@ header {
   grid-row: 3 / span 1;
 }
 #grid-card6 p {
-  color: white;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgba(222.06, 216.51, 216.51, 0) 100%,
+    rgb(255, 255, 255) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Ikaros Sans-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
 }
 #grid-card6 .upto {
   font-size: 2vw;
@@ -903,135 +911,137 @@ header {
   color: transparent;
 }
 
-
 /* FLAGSHIP STYLING */
-.flagship{
+.flagship {
   width: 100%;
   height: auto;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+
   background-image: url("/images/flagship.png");
   background-repeat: no-repeat;
   background-origin: content-box;
   background-attachment: fixed;
   background-position: center;
-  background-size:cover;
+  background-size: cover;
 }
 
-.flagship-heading{
+.flagship-heading {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.flagship-cards{
+.flagship-cards {
   width: 100%;
   height: auto;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.flagship-heading p{
+.flagship-heading p {
   margin: auto;
   text-align: center;
   width: 80%;
   font-size: 4rem;
 }
 
-.flagship-card{
+.flagship-card {
   width: 30%;
   height: auto;
   transition-duration: 0.3s;
   transform: translateY(0);
 }
-.flagship-card:hover{
+.flagship-card:hover {
   transition-duration: 0.2s;
   transform: translateY(-10px);
 }
-#flagship-card-upper:hover{
+#flagship-card-upper:hover {
   cursor: pointer;
 }
-.flagship-card-lower{
+.flagship-card-lower {
   transform: translateY(50px);
 }
 
-@media screen and (max-width:800px){
-  
-  .flagship-heading p{
+@media screen and (max-width: 800px) {
+  .flagship-heading p {
     margin: auto;
     text-align: center;
     width: 80%;
     font-size: 4vw;
   }
-  .flagship-card-lower{
+  .flagship-card-lower {
     transform: translateY(20px);
   }
 }
 
 /* Newsroom */
-.newsroom{
-  font-family: 'Ikaros sans';
+.newsroom {
+  font-family: "Ikaros sans";
 }
-.newsroom-heading p{
+.newsroom-heading p {
   font-size: 3vw;
 }
-.fcc-newsroom-heading{
+.fcc-newsroom-heading {
   color: #1270ed;
 }
-
+@media screen and (max-width: 800px) {
+  .newsroom-heading p {
+    font-size: 3rem;
+  }
+}
 
 /* FOOTER */
-  .footer {
-    margin: auto;
-    font-family: "Ikaros Sans";
-    position: relative;
-    overflow: hidden;
-  }
-  footer {
-    background-color: rgb(15, 70, 144);
-    padding-top: 4%;
-    padding-right: 4%;
-    padding-left: 4%;
-  }
-  .nav-item a {
-    color: white;
-  }
-  .nav-item a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  .white-noise1 {
-    background-color: white;
-    width: 30%;
-    height: 30%;
-    border-radius: 100%;
-    filter: blur(200px);
-  }
-  .white1-1 {
-    position: absolute;
-    bottom: 30px;
-    right: -20px;
-  }
-  .white2-1 {
-    position: absolute;
-    top: 0px;
-    left: -200px;
-  }
-  .blue-noise {
-    background-color: rgb(52, 91, 216);
-    width: 45%;
-    height: 45%;
-    border-radius: 100%;
-    filter: blur(300px);
-  }
-  .blue1 {
-    position: absolute;
-    top: -30px;
-    right: -50px;
-  }
+.footer {
+  margin: auto;
+  font-family: "Ikaros Sans";
+  position: relative;
+  overflow: hidden;
+}
+footer {
+  background-color: rgb(15, 70, 144);
+  padding-top: 4%;
+  padding-right: 4%;
+  padding-left: 4%;
+}
+.nav-item a {
+  color: white;
+}
+.nav-item a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.white-noise1 {
+  background-color: white;
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  filter: blur(200px);
+}
+.white1-1 {
+  position: absolute;
+  bottom: 30px;
+  right: -20px;
+}
+.white2-1 {
+  position: absolute;
+  top: 0px;
+  left: -200px;
+}
+.blue-noise {
+  background-color: rgb(52, 91, 216);
+  width: 45%;
+  height: 45%;
+  border-radius: 100%;
+  filter: blur(300px);
+}
+.blue1 {
+  position: absolute;
+  top: -30px;
+  right: -50px;
+}

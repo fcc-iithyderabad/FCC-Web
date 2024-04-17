@@ -50,8 +50,11 @@
   cursor: pointer;
 }
 .about-section {
-  margin: auto;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
+  height: auto;
 
   display: flex;
   flex-direction: column;

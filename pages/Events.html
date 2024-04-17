@@ -21,8 +21,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../pages-css/horizon.css">
-    <link rel="stylesheet" href="../pages-css/events.css">
+    <link rel="stylesheet" href="../pages-css/sponsors.css">
+    <link rel="stylesheet" href="../pages-css/events.css ">
     
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -36,29 +36,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Draggable.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/EaselPlugin.min.js" defer></script>
     <script src="../script.js" defer></script>
-    <script src="../pages-js/sponsors.js" defer></script>
+    <script src="../pages-js/events.js"></script>
 
     <title>FCC</title>
     
 </head>
-<body class="horizon-page">
+<body>
     <!-- HEADER and NAVBAR -->
     <div class="container-fluid header d-flex py-3">
-        <header class="d-flex  align-items-center justify-content-between justify-content-lg-between py-3 px-md-5 px-1">
+        <header class="d-flex  align-items-center justify-content-between justify-content-lg-between py-3 px-md-5">
           <div class=" w-auto logo" >
             <a href="../index.html" class="d-inline-flex link-body-emphasis text-decoration-none align-items-center justify-content-evenly">
               <img  src="../images/fcc logo high res.png" alt="FCC" width="70" height="70">
-              <!-- <h1 class="logotext pt-3 ps-2 fw-bold navbar-brand">FCC</h1> -->
             </a>
           </div>
           
           <ul class="nav col-12 col-md-auto mb-2  mb-md-0 w-auto navlinks d-none d-lg-flex justify-content-center">
             <li><a href="../index.html" class="nav-link fs-5 head-navlink px-3 fw-light">Home</a></li>
-            <li><a href="Horizon.html" class="nav-link fs-5 head-navlink px-3 fw-light current-link"  style=" color: #70bdee;">Horizon <img src="../images/etherium.png" alt=""></a></li>
-            <li><a href="Events.html" class="nav-link fs-5 head-navlink px-3 fw-light">Schedule</a></li>        
+            <li><a href="Horizon.html" class="nav-link fs-5 head-navlink px-3 fw-light">Horizon</a></li>
+            <li><a href="Events.html" class="nav-link fs-5 head-navlink px-3 fw-light current-link"  style=" color: #70bdee;">Schedule <img src="../images/etherium.png" alt=""></a></li>
             <li><a href="Sponsors.html" class="nav-link fs-5 head-navlink px-3 fw-light">Sponsors</a></li>
             <li><a href="Team.html" class="nav-link fs-5 head-navlink px-3 fw-light">Team</a></li>
-            </ul>
+        </ul>
 
           <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -71,12 +70,12 @@
               <button type="button" class="btn-close bg-light " data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
             </div>
             <div class=" flex flex-col justify-evenly h-100 d-lg-none links">
-                  <a href="../index.html" class="toggle-links">Home</a>
-                  <a href="Sponsors.html" class="toggle-links "   style=" color: #70bdee;">Horizon</a>
-                  <a href="pages/Events.html" class="nav-link fs-5 head-navlink px-3 fw-light">Schedule</a>
+                  <a href="../index.html" class="toggle-links ">Home</a>
+                  <a href="Horizon.html" class="toggle-links">Horizon</a>
+                  <a href="Events.html" class="toggle-links "   style=" color: #70bdee;">Schedule</a>
                   <a href="Sponsors.html" class="toggle-links ">Sponsors</a>
                   <a href="Team.html" class="toggle-links ">Team</a>
-            </div>
+              </div>
           </div>
         </header>
       </div>
@@ -86,95 +85,145 @@
     <img class="svgblur3" src="../images/rupeeblur.svg" alt="" height="40" width="40" title="svg">
     <div class="body-bg-grad"></div>
     
-      <!-- Landing Part Horizon -->
-    <div class="h-auto px-4 py-5 my-5 text-center">
-        <p class="display-5 iith-heading-hor">FCC IIT-HYDERABAD Presents</p>
-        <div class="col-lg-6 mx-auto w-100 d-flex flex-column gap-0">
-          <p class="lead mb-4 hor-heading-hor">HORIZON 24'</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center hor-button">
-            <button type="button" class="btn btn-primary btn-lg btn-block px-4 hor-button">TODAY'S SCHEDULE </button>
-          </div>
-        </div>
-      </div>
 
-       <!-- About Event -->
-    <div class="about-section ">    
-      <div class="about-section-sub my-3">
+    <!-- Sponsors Section -->
+    <p class="schedule-heading mx-auto w-100 h-auto text-center">Schedule</p>
+     <div class="events w-100 h-auto" id="events">
+        <div class="d-flex bg-primary justify-content-center justify-content-md-start p-4 w-100">
+            <div class="headings-events d-flex bg-primary justify-content-start ">
+                <h2 class="bg-light text-primary mx-2 my-auto p-1 rounded-2">Events</h2>
+                <a class="competitions-link eve-link rounded-2 mx-2 px-1 my-auto" href="#competitions" ><h2 >Competitions</h2></a>
+            </div>
+        </div>
+        <div class="schedule-events w-75 mx-auto my-4">
 
-        <div class="who-head who-large who w-100">About,<br> the Event</div>
-        <div class="who-head who-small who">
-          <p>About the Event</p>
-        </div>
-        <div class="who-text who w-100">Horizon 2024, the flagship event of FCC IITH, brings in some of the best speakers and leaders to promote the knowledge of Finance, Consulting, and Product Management among the community via thought-provoking Keynote Talks, Panel Discussions, Career Guidance Meetups, Networking Lobbies, Workshops and Competitions.
+            <div class="day-1">
+                <h1 class="date mt-5 mb-2 text-start">Day 1 - 16th Feb 2024</h1>
+                <div class="schedule-events">
+                    <div class="event-card w-100  rounded-4 p-4">
+                        <h1>Fireside chat with Abhishek kar: Confessions of a Stock</h1>
+                        <h3>Abhishek Kar</h3>
+                        <h5>Auditorium, 9:15 PM, IST  </h5>
+                        <div class="btn btn-lg text-primary rounded-3 light-button insta-fire">Know More!</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="day-2">
+                <h1 class="date mt-5 mb-2 text-start">Day 2 - 17th Feb 2024</h1>
+                <div class="schedule-events">
+
+                    <div class="event-card w-100  rounded-4 p-4  my-4">
+                        <h1>Cultivating Growth: Financial strategies for budding startups</h1>
+                        <h3>Sri Harsha Vandakattu, VP - Finance, Sid's Farm</h3>
+                        <h5>Auditorium, 3:30 PM - 4:00 PM, IST  </h5>
+                        <div class="btn btn-lg text-primary rounded-3 light-button insta-sid">Know More!</div>
+                    </div>
+
+                    <div class="event-card w-100  rounded-4 p-4  my-4">
+                        <h1>Horizon Connect : A Networking Night with the Product Leaders </h1>
+                        <h3>Pratik Dhoot, Product Management Specialist - S&P Global </h3>
+                        <h3>Maria Deepika, Senior Product Manager - ValueLabs</h3>
+                        <h5>Auditorium, 7:00 PM - 7:30 PM, IST  </h5>
+                        <div class="btn btn-lg text-primary rounded-3 light-button insta-connect">Know More!</div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="day-3">
+                <h1 class="date mt-5 mb-2 text-start">Day 3 - 18th Feb 2024</h1>
+                <div class="schedule-events">
+
+                    <div class="event-card w-100  rounded-4 p-4 my-4">
+                        <h1>Engineer's guide to Finance: From Textbook theories to real world riches</h1>
+                        <h3>Panel Discussion - Finance</h3>
+                        <h3>Arjun Beri - VP - Wells Fargo</h3>
+                        <h3>Mohit Chaudhary - Zonal Head - OfBusiness</h3>
+                        <h3>Aswini Bajaj - CEO - Leveraged Growth</h3>
+                        <h5>Auditorium, 10:30 AM to 11:20 AM, IST  </h5>
+                        <div class="btn btn-lg text-primary rounded-3 light-button insta">Know More!</div>
+                    </div>
+
+                    <div class="event-card w-100  rounded-4 p-4 my-4">
+                        <h1>Prodigy Forge: Mastering product Management</h1>
+                        <h3>Mrityunjay Kumar</h3>
+                        <h5>Auditorium, 11:30 AM to 12:10 PM, IST  </h5>
+                        <div class="btn btn-lg text-primary rounded-3 light-button prodigy">Register Now!</div>
+                    </div>
+
+                    <div class="event-card w-100  rounded-4 p-4 my-4">
+                        <h1>Consulting in Industry 4.0: Envisioning the future of business strategy in the new age.</h1>
+                        <h3>Panel Discussion - Consulting</h3>
+                        <h5>Auditorium, 12:15 PM to 1:15 PM, IST  </h5>
+                        <div class="btn btn-lg text-primary rounded-3 light-button insta-4">Grab Your Seat!</div>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
-        <div class="about-row my-3">
-        <div class="about-outcard">
-            <img src="../images/horizon-about/3.svg" width="100%" height="100%" alt="">
-        </div>
-        <div class="about-outcard">
-            <img src="../images/horizon-about/1.svg" width="100%" height="100%" alt="">
-        </div>
-        <div class="about-outcard">
-          <img src="../images/horizon-about/4.svg" width="100%" height="100%" alt="">
-        </div>
-        <div class="about-outcard">
-            <img src="../images/horizon-about/2.svg" width="100%" height="100%" alt="">
-        </div>
-      </div>
-
-        <div class="who-head who-large who w-100">Our Vision<br> for 2024</div>
-        <div class="who-head who-small who w-100">
-          <p>Our Vision for 2024</p>
-        </div>
-        <div class="who-text who w-100">In 2023-24,  Horizon aims to expand its influence to students community by inviting industry, academia, and government experts to share insights on Finance, Consulting, and Product Management.
-
-          <p>We will introduce new competitions and workshops solidifying its status as the go-to platform for Finance, Consulting, and Product Management enthusiasts.</p>
-        </div>
+     </div>
 
 
-    </div>
-    </div>
-    
-    <div class="past-speakers my-4">
-      <div class="speakers-heading my-4">
-        <p>Past Speakers</p>
-      </div>
-      <div class="speakers-grid d-flex justify-content-evenly flex-wrap px-5 my-4 w-100">
-        <div class="speaker-card"><img src="../images/pastspeakers/rishabhjain.svg" width="100%" height="100%" alt=""></div>
-        <div class="speaker-card"><img src="../images/pastspeakers/akhilsharma.svg" width="100%" height="100%" alt=""></div>
-        <div class="speaker-card"><img src="../images/pastspeakers/gauravmahindra.svg" width="100%" height="100%" alt=""></div>
-        <div class="speaker-card"><img src="../images/pastspeakers/subbaperepa.svg" width="100%" height="100%" alt=""></div>
-      </div>
-    </div>
+     <div class=" competitions w-100 h-auto" id="competitions">
+        <div class=" d-flex bg-primary justify-content-start p-4 w-100">
+            <div class="headings-events d-flex bg-primary justify-content-start ">
+                <a class="events-link eve-link rounded-2 mx-2 px-1 my-auto " href="#events" ><h2 >Events</h2></a>
+                <h2 class="bg-light text-primary my-auto mx-2 p-1 rounded-2">Competitions</h2>
+            </div>
+        </div>
+        <div class="schedule-events w-75 mx-auto my-4">
 
-    <div class="hor-sponsors my-4">
-      <div class="hor-sponsor-heading">
-        <p>Sponsors</p>
-      </div>
-      <div class="hor-sponsors-carousel-1">
-        <div class="sponsor-card card-1 "><img src="../images/sponsors/abhibus-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-2 "><img src="../images/sponsors/mainspring-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-3 "><img src="../images/sponsors/stockgro-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-4 "><img src="../images/sponsors/finlarics-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-5 "><img src="../images/sponsors/monster-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-6 "><img src="../images/sponsors/product-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-7 "><img src="../images/sponsors/sid farm-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-8 "><img src="../images/sponsors/grabon-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-9 "><img src="../images/sponsors/plum (2)-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-10 "><img src="../images/sponsors/startupnews-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-11"><img src="../images/sponsors/edufabrica-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-12 "><img src="../images/sponsors/easemytrip-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-13 "><img src="../images/sponsors/elearnmarkets-min.png" width="90%" height="90%" alt=""></div>
-        <div class="sponsor-card card-14 "><img src="../images/sponsors/preplounge-min.png" width="90%" height="90%" alt=""></div>
-      </div>    
-    </div>
+            <div class="day-1">
+                <h1 class="date mt-5 mb-2 text-start">Day 1 - 16th Feb 2024</h1>
+                <div class="schedule-events">
+                    <div class="event-card w-100  rounded-4 p-4">
+                        <h1>Horizon Tradequest</h1>
+                        <h3>The ultimate trading showdown, where you can trade with virtual money in a simulated market.</h3>
+                        <h5>Last Date : 16th Feb 9:15 PM, IST</h5>
+                        <div class="btn btn-lg text-primary rounded-3 light-button" id="tradequest-button">Register Now!</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="day-2">
+                <h1 class="date mt-5 mb-2 text-start">Day 2 - 17th Feb 2024</h1>
+                <div class="schedule-events">
+
+                    <div class="event-card w-100  rounded-4 p-4">
+                        <h1>EquityX</h1>
+                        <h3>Empowering Investors with Comprehensive Stock Analysis and Expert Investment Recommendations.</h3>
+                        <h5>Last Date : 17th Feb 9:15 PM, IST </h5>
+                        <div class="btn btn-lg text-primary rounded-3 light-button" id="equityx-button">Register Now!</div>
+                    </div>
+
+                    <div class="event-card w-100  rounded-4 p-4 my-4">
+                      <h1>ProdX</h1>
+                      <h3>Showcase your Problem-Solving Skills and Innovative Solutions in our Case Study Competition.</h3>
+                      <h5>Last Date : 18th Feb 9:15 PM, IST </h5>
+                      <div class="btn btn-lg text-primary rounded-3 light-button" id="prodx-button">Register Now!</div>
+                  </div>
+
+                  <div class="event-card w-100  rounded-4 p-4 my-4">
+                      <h1>Mergers and Acquisition</h1>
+                      <h3>Discover the World of M&A with Strategic Company Analysis, Financial Evaluation, and Expert Deal Recommendations.</h3>
+                      <h5>Last Date : 18th Feb 9:15 PM, IST</h5>
+                      <div class="btn btn-lg text-primary rounded-3 light-button" id="mergers-button">Register Now!</div>
+                  </div>
+
+                </div>
+            </div>
+
+
+        </div>
+     </div>
 
       <!-- FOOTER -->
-      <div class="footer container-fluid w-100 h-auto" id="footer">
+      <div class="footer container-fluid w-auto h-auto" id="footer" style="position: relative;bottom: 0;">
         <div class="white-noise1 white1-1"></div>
         <div class="white-noise1 white2-1"></div>
-        <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-5">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 border-top ">
           <div class="col mb-3">
             <a href="../index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
               <img src="../images/Group 31.svg" width="60%" height="60%" alt="">
@@ -187,7 +236,7 @@
               <li class="nav-item mb-2"><a href="Comingsoon.html" class="nav-link p-0 text-body-light" target="_blank">FCC Leadership</a></li>
               <li class="nav-item mb-2"><a href="Comingsoon.html" class="nav-link p-0 text-body-light" target="_blank">Blogs</a></li>
               <li class="nav-item mb-2"><a href="Comingsoon.html" class="nav-link p-0 text-body-light" target="_blank">Gallery</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" target="_blank">Contact Us</a></li>
+              <li class="nav-item mb-2"><a href="#footer" class="nav-link p-0 text-body-light" target="_blank">Contact Us</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"></a></li>
             </ul>
           </div>
@@ -198,7 +247,7 @@
               <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-body-light">Home</a></li>
               <li class="nav-item mb-2"><a href="Horizon.html" class="nav-link p-0 text-body-light" target="_blank">Horizon</a></li>
               <li class="nav-item mb-2"><a href="Sponsors.html" class="nav-link p-0 text-body-light" target="_blank">Sponsors</a></li>
-              <li class="nav-item mb-2"><a href="Events.html" class="nav-link p-0 text-body-light" target="_blank">Workshops</a></li>
+              <li class="nav-item mb-2"><a href="Events.html" class="nav-link p-0 text-body-light" >Workshops</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"></a></li>
             </ul>
           </div>
@@ -226,9 +275,6 @@
           </div>
         </footer>
       </div>
-
   </body>
-
-
 
 </html>

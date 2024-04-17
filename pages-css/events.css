@@ -1,0 +1,32 @@
+.schedule-heading{
+    font-size: 4.7rem;
+}
+.headings-events{
+    width: 30%;
+}
+#competitions{
+  display: block;
+}
+#events{
+  display: block;
+}
+.eve-link {
+  color: white;
+  text-decoration: none;
+}
+.eve-link:hover {
+  background-color: white;
+  color: rgb(13, 110, 253);
+}
+.light-button {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+.light-button:hover {
+  background-color: white;
+  box-shadow: 0px 0px 30px rgba(245, 248, 255, 0.5);
+  cursor: pointer;
+}
+.event-card{
+    background-color: rgba(13, 109, 253, 0.737);
+}

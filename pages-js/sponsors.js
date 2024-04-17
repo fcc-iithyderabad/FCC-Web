@@ -4,7 +4,7 @@ $(".card-1 img").on('click', function(){
     return false;
 })
 $(".card-2 img").on('click', function(){
-    window.open('https://www.decathlon.in' )
+    window.open('https://www.mainspringcro.com/' )
     return false;
 })
 $(".card-3 img").on('click', function(){
